@@ -1,0 +1,21 @@
+/* header */
+header,footer{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1em;
+    background-color: rgb(233, 141, 75);
+}
+h1{
+    padding: 2em;
+    font-weight: 900;
+}
+
+/* body */
+
+/* main */
+
+/* footer */
+footer{
+    justify-content: center;
+}
