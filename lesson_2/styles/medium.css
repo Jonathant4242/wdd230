@@ -1,0 +1,13 @@
+@media (min-width: 32.5em){
+    header,footer,main{
+        max-width: 50em;}
+
+    main{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3em;}
+
+    main section:nth-child(3) {
+        grid-column: span 2;
+    }
+
+}
