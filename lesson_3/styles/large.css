@@ -1,1 +1,11 @@
-@media only screen and (min-width: 65em){}
+@media only screen and (min-width: 65em){
+    main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    footer{
+        flex-direction: row;
+    }
+}
