@@ -1,28 +1,110 @@
-/* header */
-header,footer{
-    display:flex;
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding: 1em;
-    background-color: rgb(233, 141, 75);
-}
-h1{
-    font-family: 'VT323', monospace;
-    font-size: 3rem;
-    padding: 2em;
-    font-weight: 900;
 }
 
-/* body */
-body{
-    font-family: 'Ubuntu Mono', monospace;
-    max-width: 960px;
+html {
+    display: table;
     margin: auto;
 }
-p
-/* main */
 
-/* footer */
-footer{
+body{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+header,footer{
+    /* display: block; */
+    max-width: 30em;
+    margin: 0 auto;
+}
+
+header,footer,nav{
+    border-radius: 25px;
+    box-shadow: 5px 8px 2px 10px rgb(0 0 0 / 75%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    background-color: rgb(3, 126, 32);
+    padding: 2em;
+    margin: 1rem;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+nav{
+    flex-wrap: nowrap;
+
+}
+nav div{
+    font-size: x-large;
+    margin-left: 10px;
+}
+body{padding: 4rem;}
+
+img{
+    margin: 10px;
+    width: 75%;
+    height: 50%;
+        
+}
+
+main, footer{font-family: sans-serif;
+}
+
+main{
+    padding: 1em;
+    margin:  1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1rem;
+}
+h1, h2{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1{
+    padding: 1em;
+}
+
+h2{
+    padding-top: 1em;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 25px ;
+    background-color: rgb(3, 126, 32);
+    box-shadow: 5px 8px 2px 10px rgba(0, 0, 0, 0.765);
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.logo{
+    width: 300px;
+} 
+
+body{padding: 1em;}
+/* color scheme  */
+
+p{
+padding: 1em;
+font-family: sans-serif;}
+
+
+/* Fonts */
+.Gemunu_Libre{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: 700;
+}
+.f16px{
+    font-size: 30px;
 }
