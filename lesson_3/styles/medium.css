@@ -1,1 +1,6 @@
-@media (min-width: 32.5em){}
+@media (min-width: 32.5em){
+    nav{
+        justify-content: center;
+        flex-direction: row;
+    }
+}

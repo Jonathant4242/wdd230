@@ -1,11 +1,23 @@
 @media only screen and (min-width: 65em){
     main{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+
+    }
+    header{
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+    nav{
+        font-size: 4rem;
+        padding: 15px;
+    }
+    .nav_image{
+        height: 6rem;
     }
     footer{
         flex-direction: row;
+    }
+    article, section{
+        max-width: 300px;
     }
 }
