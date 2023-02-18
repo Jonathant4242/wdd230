@@ -1,4 +1,7 @@
-
+/* Nav */
+.nav_image{
+    height: 4rem;
+}
 html, body {
     height: 100%;
     display: flex;
@@ -29,7 +32,7 @@ header,footer,nav{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(3, 126, 32);
+    background-color:#5F8D4E;
     padding: 2em;
     margin: 1rem;
     flex-wrap: wrap;
@@ -74,20 +77,32 @@ h1{
 h2{
     padding-top: 1em;
 }
-
-article{
+table{
+    margin: 2rem;
+}
+article,section{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
     border-radius: 25px ;
-    background-color: rgb(3, 126, 32);
+    background-color:rgba(95, 141, 78, 0.3);
     box-shadow: 5px 8px 2px 10px rgba(0, 0, 0, 0.765);
-    margin: 1rem;
+    margin: 2rem;
     margin-bottom: 2rem;
 }
 
+.space_around{
+    justify-content: space-around;
+}
+.palette{
+    max-width: 100%;
+    max-height: 100%;
+    
+    
+
+}
 .logo{
     width: 300px;
 } 
@@ -107,4 +122,7 @@ font-family: sans-serif;}
 }
 .f16px{
     font-size: 30px;
+}
+.active_page{
+    background-color: rgba(0, 0, 0, 0.3);
 }
