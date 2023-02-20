@@ -1,0 +1,353 @@
+body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  padding: 1rem;
+}
+
+/* Header */
+header,
+footer {
+  background-color: #CBF3F0;
+  padding: 1rem;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 120px 50vw;
+  font-family: 'Fira Code', monospace;
+  font-size: .5rem;
+  text-align: center;
+  padding: 1rem;
+
+}
+
+/* Header Grid */
+header img {
+  grid-row: span 2;
+
+}
+
+header h1,
+header h2 {
+  grid-column: span 2;
+  padding: .4rem;
+  margin-left: 1rem;
+}
+
+.title {
+  background-color: #FFBF69;
+  font-family: 'Fira Code', monospace;
+
+}
+
+
+header nav {
+  grid-column: span 3;
+}
+
+header .date {
+  grid-column: span 3;
+  font-size: 1.1rem;
+}
+
+header,
+footer {
+  background-color: #CBF3F0;
+  padding: 1rem;
+}
+
+/* HEADER: Today's date */
+.date,
+aside {
+  margin: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, .5);
+  padding: 0.75rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+
+
+/* nav_button */
+nav button {
+  /* margin: .2rem 2vw; */
+  background-color: #FFBF69;
+  border: none;
+  font-size: 2rem;
+  color: #2EC4B6;
+
+}
+
+
+/* nav */
+nav ul {
+  font-family: 'Fira Code', monospace;
+  /* font-weight: 900; */
+  list-style: none;
+  font-size: 1rem;
+  font-weight: bolder;
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #FFBF69;
+}
+
+nav ul a {
+  display: block;
+  padding: .8rem;
+  margin-bottom: 0;
+
+  border-top: 1px solid rgba(0, 0, 0, .5)
+}
+
+nav ul {
+  padding: .5rem;
+
+
+}
+
+.active {
+  padding: 0;
+  margin: 0;
+  background-color: #2EC4B6;
+}
+
+nav ul a:link,
+nav ul a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* Nav Hover/ active click */
+nav ul li a:hover,
+nav ul li a:active {
+  background-color: rgba(0, 0, 0, .1);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* on / off */
+
+nav ul {
+  display: none;
+}
+
+nav ul.open {
+  display: block;
+}
+
+/* Butotn icon */
+#hamburgerBtn span:nth-child(1) {
+  display: block;
+}
+
+#hamburgerBtn span:nth-child(2) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+  display: block;
+}
+
+/* MAIN */
+
+main {
+padding: 1rem;
+}
+.maingrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+  padding: 5rem;
+  gap: .5rem;
+  justify-content: space-evenly;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* WEATHER */
+.weather {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sun {
+  padding: .5rem;
+}
+
+.weather h2 {
+  grid-column: span 2;
+}
+
+/* WELCOME TO DRACKO PICTURE */
+.hero {
+  display: flex;
+  margin: 10px;
+  position: relative;
+  height: min-content;
+  min-width: 375px;
+  justify-content: space-evenly;
+  align-content: stretch;
+}
+.float{
+  float: left;
+}
+.welcome_pic {
+  max-width: 475px;
+  min-width: 200px;
+  margin: 5px;
+  display: flex;
+
+
+}
+
+/* pink picture */
+.welcome_pic_pink{
+  display: flex;
+  justify-content: center;
+  /* max-width: 10%;
+  min-width: 200px;
+  width: 407px;
+  height: auto;
+  margin: 5px;
+  display: flex; 
+  justify-content: center; */
+}
+
+.welcome {
+  position: absolute;
+  top: 1rem;
+  right: 7rem;
+  background: radial-gradient(#eee, #FFBF69);
+  border: 1px solid #000;
+  padding: .5rem;
+  box-shadow: 0 0 30px #333;
+  opacity: 0.9;
+  font-size: .65rem;
+}
+
+.join_c {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: radial-gradient(#eee, #2EC4B6);
+  border: 1px solid #000;
+  padding: .5rem;
+  box-shadow: 0 0 30px #333;
+  opacity: 0.9;
+  font-size: .65rem;
+}
+
+
+/* spotlight */
+.spotlight {
+  display: flex;
+  padding: .5rem;
+  justify-content: space-between;
+
+}
+
+/* turned off main items in small */
+.join {
+  display: none;
+}
+
+.spot3 {
+  display: none;
+}
+
+/* bb is to see grid containers */
+.bb {
+  padding: 1rem;
+  background-color: #FFBF69;
+  /* border-color: black; */
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+
+/* footer */
+footer div a {
+  padding: .5rem;
+}
+
+footer div address,
+footer div h4,
+.creatorInfo {
+  margin: 1rem;
+}
+
+/* footer grid */
+footer {
+  text-align: center;
+  display: grid;
+  grid-template-rows: 120px 20vh 20vh;
+}
+
+footer img {
+  margin: auto;
+}
+
+.creatorInfo {
+  padding: .4rem;
+  margin-left: 1rem;
+  font-size: .6rem;
+  background-color: #FFBF69;
+}
+
+
+/* Class area to creat flow */
+.title {
+  background-color: #FFBF69;
+  font-family: 'Fira Code', monospace;
+
+}
+
+/* Discover */
+.discover_grid{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.discover_picture img{ width: 300px; height: 300px; margin: .5rem;}
+
+.discover_picture{
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.discover_artical{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.d_number_3 h2{
+  margin-bottom: 1px;
+}
+.d_number_3 h4{
+  margin: 1px;
+  margin-top: 0px;
+}
+
+/* site counter */
+.visit_container {
+  font-size: .8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem;
+	border: 1px solid #bbb;
+	padding: .2rem;
+	background-color: #FFBF69;
+}
+.visit_container p {
+  padding: .5rem
+}
