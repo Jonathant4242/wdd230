@@ -1,0 +1,169 @@
+@media only screen and (min-width: 35rem) {
+
+  /* HEADER */
+
+  header {
+    display: grid;
+    grid-template-columns: 120px 50vw;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    text-align: center;
+
+  }
+
+  nav button {
+  display: none;
+  }
+
+  nav ul {
+    justify-content: center;
+    display: flex;
+    margin-left: 2vw;
+
+  }
+
+  /* side note to look in too */
+  /* I tried to use nth child. I couldn't make it work.
+  nav ul li a:nth-child(4) */
+  .one {
+    border-right: none;
+  }
+
+ 
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, .3);
+  }
+
+  /* Main Grid */
+  div.maingrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  /*----- Main Grid items -----*/
+  /* image Hero */
+  .welcome_pic {
+    min-width: 28rem;
+    max-width: 72rem;
+    max-height: 500px;
+  
+  }
+
+  .welcome {
+    font-size: 1rem;
+  }
+
+  .join_c {
+    right: 8rem;
+    font-size: 1rem;
+  }
+
+  /* image end */
+
+  /* postioning */
+  .news {
+    grid-row: 2;
+  }
+
+  .spotlight {
+    grid-row: 3;
+  }
+
+  .join {
+    grid-row: 4;
+  }
+
+  .events {}
+
+  /* span 2 collumns */
+  .hero,
+  .news,
+  .join,
+  .spotlight {
+    grid-column: span 2;
+  }
+  .hero{
+    grid-row: span 4;
+  }
+
+  .spotlight {}
+
+  .weather {}
+
+  .join {
+    display: block;
+  }
+
+  .news {
+    grid-column: span 2;
+  }
+
+  /* footer grid */
+  footer {
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    grid-template-rows: 1fr .5fr;
+    text-align: center;
+    justify-items: stretch;
+  }
+
+  footer img {
+    margin: auto;
+    /* grid-row: span 2; */
+  }
+
+  .chamberInfo {
+    text-align: left;
+    grid-column: span 1;
+    /* grid-row: span 2; */
+  }
+
+  .footer_right {
+    display: flex;
+    text-align: end;
+    line-height: 2rem;
+    justify-content: flex-end;
+  }
+
+  div.footer_right.contactInfo {
+    text-align: right;
+  }
+
+  .creatorInfo {
+    display: block;
+    grid-column: span 4;
+    padding: 1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+
+
+/* Discover */
+.discover_grid{
+  grid-template-columns: 1fr 1fr;
+  margin: 1em;
+  
+}
+.discover_picture{
+margin: 1rem;
+}
+
+.discover_picture:hover {
+  background-color: rgb(215, 215, 215, .8);
+  box-shadow: 2px 2px 2px 1px #FFBF69;}
+
+picture:nth-child(odd) .discover_picture {
+grid-column: 2;
+}
+article:nth-child(odd) .discover_artical {
+  grid-row: 1;
+}
+
+
+
+
+/* end of media query */
+}
