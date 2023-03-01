@@ -7,7 +7,7 @@ body {
 /* Header */
 header,
 footer {
-  background-color: #CBF3F0;
+  background-color: #A4BE7B;
   padding: 1rem;
 }
 
@@ -35,7 +35,7 @@ header h2 {
 }
 
 .title {
-  background-color: #FFBF69;
+  background-color: #5F8D4E;
   font-family: 'Fira Code', monospace;
 
 }
@@ -52,7 +52,7 @@ header .date {
 
 header,
 footer {
-  background-color: #CBF3F0;
+  background-color: #A4BE7B;
   padding: 1rem;
 }
 
@@ -70,10 +70,10 @@ aside {
 /* nav_button */
 nav button {
   /* margin: .2rem 2vw; */
-  background-color: #FFBF69;
+  background-color: #5F8D4E;
   border: none;
   font-size: 2rem;
-  color: #2EC4B6;
+  color: #E5D9B6;
 
 }
 
@@ -86,10 +86,10 @@ nav ul {
   font-size: 1rem;
   font-weight: bolder;
   display: block;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 2rem;
+  padding: 2rem;
   text-align: center;
-  background-color: #FFBF69;
+  background-color: #5F8D4E;
 }
 
 nav ul a {
@@ -109,7 +109,7 @@ nav ul {
 .active {
   padding: 0;
   margin: 0;
-  background-color: #2EC4B6;
+  background-color: #E5D9B6;
 }
 
 nav ul a:link,
@@ -129,6 +129,7 @@ nav ul li a:active {
 /* on / off */
 
 nav ul {
+  
   display: none;
 }
 
@@ -192,6 +193,8 @@ padding: 1rem;
   min-width: 375px;
   justify-content: space-evenly;
   align-content: stretch;
+  background-color: #5F8D4E;
+  border: 5px solid #000;
 }
 .float{
   float: left;
@@ -218,11 +221,20 @@ padding: 1rem;
   justify-content: center; */
 }
 
+.social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  background-color: #5F8D4E,5;
+}
+
 .welcome {
   position: absolute;
   top: 1rem;
   right: 7rem;
-  background: radial-gradient(#eee, #FFBF69);
+  background: radial-gradient (#A4BE7B,#5F8D4E);
   border: 1px solid #000;
   padding: .5rem;
   box-shadow: 0 0 30px #333;
@@ -234,7 +246,7 @@ padding: 1rem;
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  background: radial-gradient(#eee, #2EC4B6);
+  background-color: radial-gradient(#E5D9B6,#5F8D4E);
   border: 1px solid #000;
   padding: .5rem;
   box-shadow: 0 0 30px #333;
@@ -263,7 +275,7 @@ padding: 1rem;
 /* bb is to see grid containers */
 .bb {
   padding: 1rem;
-  background-color: #FFBF69;
+  background-color: #5F8D4E;
   /* border-color: black; */
   border-width: 5px;
   border-color: black;
@@ -299,13 +311,13 @@ footer img {
   padding: .4rem;
   margin-left: 1rem;
   font-size: .6rem;
-  background-color: #FFBF69;
+  background-color: #5F8D4E;
 }
 
 
 /* Class area to creat flow */
 .title {
-  background-color: #FFBF69;
+  background-color: #5F8D4E;
   font-family: 'Fira Code', monospace;
 
 }
@@ -344,9 +356,9 @@ flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin: 1rem;
-	border: 1px solid #bbb;
+	border: 1px solid #E5D9B6;
 	padding: .2rem;
-	background-color: #FFBF69;
+	background-color: #5F8D4E;
 }
 .visit_container p {
   padding: .5rem

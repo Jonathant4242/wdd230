@@ -86,8 +86,8 @@ nav ul {
   font-size: 1rem;
   font-weight: bolder;
   display: block;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 2rem;
+  padding: 2rem;
   text-align: center;
   background-color: #5F8D4E;
 }
@@ -129,6 +129,7 @@ nav ul li a:active {
 /* on / off */
 
 nav ul {
+  
   display: none;
 }
 
@@ -218,6 +219,15 @@ padding: 1rem;
   margin: 5px;
   display: flex; 
   justify-content: center; */
+}
+
+.social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  background-color: #5F8D4E,5;
 }
 
 .welcome {
