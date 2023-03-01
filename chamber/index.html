@@ -2,47 +2,51 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The City of Dracko's Chamber of Commerce</title>
-  <meta name="description" content="This is the city of Dracko's chamber of commerce home page. ">
-
-  <!-- css -->
-
-  <link href="css/normalize.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="css/small.css"> -->
-  <link rel="stylesheet" href="css/small2.css">
-  <link href="css/medium.css" rel="stylesheet">
-  <link href="css/large.css" rel="stylesheet">
-  <link rel="shortcut icon" href="images/Icon.ico">
-
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Trok's WDD 230: Rapel Lake Chamber of Commerce Website Layout</title>
+    <meta name="description" content="Rapel Lake Chambers home page.">
+<!-- icon -->
+    <link rel="shortcut icon" href="images/rapel.ico" type="image/x-icon">
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <!-- <link rel="stylesheet" href="css/group.css"> -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
   <!-- Header -->
   <header>
-    <img src="images/Dracko.crop.med.webp" alt="A multy colored dargon with Dracko writen under it." width="120">
+    <img src="images/rapel_logo_400w_low.jpg" alt="A multy colored dargon with Dracko writen under it." width="130" height="160">
     <h1 class="title">
-      Dracko's Chamber of Commerce
+      Rapel Lake Chamber of Commerce
     </h1>
-    <h2>The Grand Emerald of the Seria Nevada</h2>
+    <h2>Party doesn't stop until the sun rise</h2>
     <!--today's date fromat requirment: Day, Date month year. EXAMPLE: Wednesday, 24 July 2020. -->
     <div class="date"></div>
-    
+    <!-- social media -->
+  
     <!-- Nav -->
     <nav>
       <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
       <ul id="mainNav">
+        <li>  <section class="social_media">
+          <a href="http://facebook.com"><img src="images/facebook_24x24.jpg" alt="facebook icon a blue circle"></a>
+          <a href="http://youtube.com"><img src="images/youtube_24x24.png" alt="youtube icon a red circle"></a>
+      </section></li>
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li><a herf="index.html">Directory</a></li>
-        <li><a herf="join.html">Join</a></li>
-        <li><a class="one" herf="place_holder">Contact</a></li>
+        <li>Discover</li>
+        <li>Directory</li>
+        <li>Join</li>
+        <li>Contact</li>
       </ul>
     </nav>
   </header>
@@ -57,112 +61,82 @@
 
       <!-- Main Grid content -->
       <section class="hero">
-        <img class="welcome_pic" src="images/orginal_shire_595x625_med.jpg"
-        alt="Picture of the Shire from lord of the Ring. Gandof the grey is in the bottom left corner">
-         <h2 class="welcome">Welcome To Dracko</h2>
-        <h4 class="join_c">Join the Chamber</h4>
+        <h2>hero</h2>
       </section>
 
       <section class="events bb">
         <h2>Event</h2>
-        <h3>Fire work show</h3>
-        <span><b>Time:</b>The evening after the harvest moon</span><br>
-        <span><b>Location:</b> Gondor's Hill Top<span></span><br>
-          <span><b>Host:</b>Gandalf The Grey</span>
       </section>
 
       <section class="weather bb">
         <h2>Weather</h2>
-        <img class="sun" src="images/weather.med.300px.jpg"
-          alt="Image of the sun with clouds in front of it. With a light blue sky." height="150">
-        <div class="temp">
-          <h2><span id="temp">30</span>&#730;F</h2> <!-- Temp -->
-          <h3>Partly Cloudy</h3> <!-- conditions -->
-          <p><b>Wind Speed: </b><span id="speed">10</span>mp/h</p><br> <!-- wind speed and with a line break humidity-->
-          <p><b>Wind Chill: </b><span id="chill"><span></p>
-          <p><b>Humidity: </b> <span id="humidity">75</span>%</p>
-        </div>
       </section>
 
       <section class="news bb">
         <h2>Press Release:</h2>
-        <h4>Trolls Rampage</h4>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, recusandae! Corporis voluptatibus,
-          dolorem quod eos voluptatum ipsum eum. Ipsa, delectus laborum recusandae laboriosam accusamus distinctio et
-          neque totam assumenda quos.</p>
       </section>
 
       <div class="spotlight bb">
         <section class="spot1">
-          <h2>Samwise Gamgee's Kitchen</h2>
-          <p>Home of the Best Harlindon Stew</p>
+          <h2>Spotlight 1</h2>
         </section>
 
         <section class="spot2">
-          <h2>Gondor's Pine</h2>
-          <p>Top notch construction</p>
+          <h2>Spotlight 2</h2>
         </section>
 
         <section class="spot3">
-          <h2>Iron Hill's Cutlery</h2>
-          <p>Shapest knive you'll ever own. </p>
+          <h2>Spotlight 3</h2>
         </section>
       </div>
 
       <section class="join bb">
         <h2>Join</h2>
-        <h4>Mordor's Army</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde animi eaque, consequuntur sunt eos nam
-          molestias et iusto ducimus atque aliquam ipsa, voluptas illo quas, eius perspiciatis impedit accusantium
-          reprehenderit.</p>
       </section>
 
     </div>
     <!-- Main Grid END -->
   </main>
-</body>
+
+
 
 <!-- footer -->
 <footer>
-
-  <!-- footer image -->
-  <img src="images/Dracko.crop.med.webp" alt="A multy colored dargon with Dracko writen under it." width="120">
-
-  <!-- footer left side -->
-  <div class="chamberInfo">
-    <h4 class="title">Dracko's Chamber of Commerce</h4>
-    <address>1234 Ancalagon the Black Rd.<br>
-      Dracko, CA 3791</address>
-  </div>
-
-  <!-- Right side -->
-  <div class="footer_right">
-    <section class="contactInfo">
-      <a href="mailto:"> SauronRules@MiddleEarth.org</a><br>
-      <a href="tel:">+(949) 123-4567</a><br>
-
-      <!-- map -->
-      <map name="City of Dracko">
-        <a href="https://www.google.com/maps">map info</a>
-      </map>
-    </section>
-  </div>
-
-
-  <!-- designer info Must Contain Site name, my name, "WDD230 Project, and last modification date"-->
-  <div class="creatorInfo">
-    *|* &copy;
-    <span id="currentdate"></span>
-    *|* Johnathan Trok *|* California *|* WDD230 Project *|* Last Modified:
-    <span id="modified"></span>
-  </div>
-</footer>
+    <!-- footer image -->
+    <img src="images/rapel_logo_400w_low.jpg" alt="logo that says rapel with a map of the lake" width="120">
+  
+    <!-- footer left side -->
+    <div class="chamberInfo">
+      <h4 class="title">Lake Rapel</h4>
+      <address>Embalse Rapel<br>
+        Las Cabras, O'Higgins, Chile</address>
+    </div>
+  
+    <!-- Right side -->
+    <div class="footer_right">
+      <section class="contactInfo">
+        <h4 class="title">Contact Info</h4>
+        <a href="mailto:"> LakeRapelVacation@gmail.com</a><br>
+        <a href="tel:">+56 9 1234 0508</a><br>
+  
+        <!-- map -->
+        <map name="Lake_Rapel">
+          <a href="https://www.google.com/maps">map info</a>
+        </map>
+      </section>
+    </div>
+  
+    <!-- designer info Must Contain Site name, my name, "WDD230 Project, and last modification date"-->
+    <div class="creatorInfo">
+      *~|~* &copy;
+      <span id="currentdate"></span>
+      *~|~* Johnathan Trok *~|~* California *~|~* WDD230 Project *~|~* Last Modified:
+      <span id="modified"></span>
+    </div>
+  </footer>
 <!-- scripts -->
-<script src="scripts/hamburger.js"></script>
-<script src="scripts/date.js"></script>
-<script src="scripts/currentdate.js"></script>
-<script src="scripts/windchill.js"></script>
-
+<script src="script/hamburger.js"></script>
+<script src="script/date.js"></script>
+<script src="script/currentdate.js"></script>
+</body>
 </html>
-
-<!-- sited sorces: https://bookichor.files.wordpress.com/2020/11/d8i2awywsaa_6ur.jpg - picture of the shire this picture is used for eductional use only. -->

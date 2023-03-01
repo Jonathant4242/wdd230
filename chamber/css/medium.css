@@ -22,6 +22,15 @@
 
   }
 
+  nav ul li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, .3);
+    margin-left: 25px;
+  }
+
   /* side note to look in too */
   /* I tried to use nth child. I couldn't make it work.
   nav ul li a:nth-child(4) */
@@ -32,6 +41,8 @@
  
 
   nav ul li a {
+    padding: 1rem;
+    
     border: none;
     border-right: 1px solid rgba(0, 0, 0, .3);
   }
@@ -49,6 +60,7 @@
     min-width: 28rem;
     max-width: 72rem;
     max-height: 500px;
+  
   }
 
   .welcome {
@@ -83,6 +95,9 @@
   .join,
   .spotlight {
     grid-column: span 2;
+  }
+  .hero{
+    grid-row: span 4;
   }
 
   .spotlight {}
@@ -134,7 +149,6 @@
     padding: 1rem;
     margin-left: 1rem;
     font-size: 1rem;
-    background-color: #FFBF69;
   }
 
 
@@ -158,6 +172,7 @@ grid-column: 2;
 article:nth-child(odd) .discover_artical {
   grid-row: 1;
 }
+
 
 
 
