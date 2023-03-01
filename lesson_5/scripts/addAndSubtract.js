@@ -1,30 +1,38 @@
-document.getElementById("btn").addEventListener("click", function () {
-    const input = document.querySelector("input")
-    const list = document.querySelector("ul");
-    let chapter = document.getElementById("favchap").value;
-    console.log(chapter);
-    if (chapter !== "") {
-  
-      const newBtn = document.createElement("button");
-      newBtn.innerHTML = "\u274C";
-  
-      const newLI = document.createElement("li");
-      newLI.textContent = chapter;
-      newLI.append(newBtn);
-  
-      document.getElementById("list").append(newLI);
-      document.getElementById("favchap").value = "";
-  
-      newBtn.addEventListener("click", function () {
-        list.removeChild(newLI);
-  
-      })
-      input.focus()
-      input.addEventListener("keypress", function (event) {
-        if (event.key === "Enter") {
-          event.preventDefault();
-          document.getElementById("btn").click();
-        }
-      })
-    }//end of if
-  });
+// Get Elements
+const input = document.querySelector("input");
+const button = document.querySelector("button");
+const list = document.querySelector("ul");
+
+function addChapter() {
+    if(input.value !== "") {
+        let chapter = input.value;
+
+        const li = document.createElement('li');
+        const deleteBtn = document.createElement('button');
+
+        li.textContent = chapter;
+        deleteBtn.textContent = "❌"; 
+        deleteBtn.addEventListener('click', () => {
+            list.removeChild(li);
+        });
+
+        li.appendChild(deleteBtn);
+        list.append(li);
+    }
+    input.value = "";
+    input.focus();
+}
+
+
+// add event listener for add button
+
+button.addEventListener('click', addChapter);
+
+// add event listener for enter key
+document.getElementById("favchap").addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        addChapter();
+    }
+})
+
