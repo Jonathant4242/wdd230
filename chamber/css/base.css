@@ -234,11 +234,10 @@ padding: 1rem;
   position: absolute;
   top: 1rem;
   right: 7rem;
-  background: radial-gradient (#A4BE7B,#5F8D4E);
+  background:(#A4BE7B);
   border: 1px solid #000;
   padding: .5rem;
   box-shadow: 0 0 30px #333;
-  opacity: 0.9;
   font-size: .65rem;
 }
 
@@ -246,7 +245,6 @@ padding: 1rem;
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  background-color: radial-gradient(#E5D9B6,#5F8D4E);
   border: 1px solid #000;
   padding: .5rem;
   box-shadow: 0 0 30px #333;
