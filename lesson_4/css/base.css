@@ -243,12 +243,12 @@ padding: 1rem;
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  background-color: (#E5D9B6,#5F8D4E);
-  border: 1px solid #000;
+  background-color: (#5F8D4E);
   padding: .5rem;
   box-shadow: 0 0 30px #333;
   opacity: 0.9;
   font-size: .65rem;
+  border: #000;
 }
 
 
