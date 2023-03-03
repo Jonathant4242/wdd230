@@ -2,7 +2,7 @@
 const input = document.querySelector("input");
 const button = document.querySelector("button");
 const list = document.querySelector("ul");
-
+// function to add chapter
 function addChapter() {
     if(input.value !== "") {
         let chapter = input.value;
@@ -24,8 +24,8 @@ function addChapter() {
 }
 
 
-// add event listener for add button
 
+// add event listener for add button
 button.addEventListener('click', addChapter);
 
 // add event listener for enter key
