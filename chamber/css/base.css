@@ -209,16 +209,18 @@ padding: 1rem;
 }
 
 /* pink picture */
-.welcome_pic_pink{
+.welcome_pic_pink {
   display: flex;
   justify-content: center;
-  /* max-width: 10%;
-  min-width: 200px;
-  width: 407px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  object-fit: cover;
+  /* max-width: 475px; */
+}
+.welcome_pic_pink  img {
+  max-width: 100%;
   height: auto;
-  margin: 5px;
-  display: flex; 
-  justify-content: center; */
 }
 
 .social_media {
@@ -272,6 +274,8 @@ padding: 1rem;
 
 /* bb is to see grid containers */
 .bb {
+  display: flex;
+  flex-wrap: wrap;
   padding: 1rem;
   background-color: #5F8D4E;
   /* border-color: black; */

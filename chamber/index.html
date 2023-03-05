@@ -64,12 +64,16 @@
       <!-- Main Grid content -->
       <section class="hero">
         <h2>hero</h2>
-        <picture class="welcome_pic_pink">
-          <source media="(max-width: 34.9rem)" srcset="images/heroSrc/heroSrc_400_low.jpg">
-          <source media="(max-width: 35rem)" srcset="images/heroSrc/heroSrc_650_low.jpg">
-          <source media="(max-width: 70rem)" srcset="images/heroSrc/heroSrc_900_low.jpg">
-          <img src="images/heroSrc/heroSrc_1050_low.jpg" alt="pink hair">
-        </picture>
+        <div class="welcome_pic_pink">
+          <picture>
+            <source media="(max-width: 35rem)" srcset="images/herosrc/heroSrc_400_low.jpg">                                       
+            <source media="(max-width: 65rem)" srcset="images/herosrc/heroSrc_900_low.jpg">
+            <source media="(max-width: 80rem)" srcset="images/herosrc/heroSrc_1050_low.jpg">
+            <img src="images/herosrc/heroSrc_1050_low.jpg" alt="Hero Image">
+          </picture>
+        </div>
+        
+        
 
       </section>
 
@@ -79,6 +83,15 @@
 
       <section class="weather bb">
         <h2>Weather</h2>
+        <img class="sun" src="images/weather.med.300px.jpg"
+          alt="Image of the sun with clouds in front of it. With a light blue sky." height="150">
+        <div class="temp">
+          <h2><span id="temp">30</span>&#730;F</h2> <!-- Temp -->
+          <h3>Partly Cloudy</h3> <!-- conditions -->
+          <p><b>Wind Speed: </b><span id="speed">10</span>mp/h</p><br> <!-- wind speed and with a line break humidity-->
+          <p><b>Wind Chill: </b><span id="chill"><span></p>
+          <p><b>Humidity: </b> <span id="humidity">75</span>%</p>
+        </div>
       </section>
 
       <section class="news bb">
@@ -144,8 +157,9 @@
     </div>
   </footer>
 <!-- scripts -->
-<script src="script/hamburger.js"></script>
-<script src="script/date.js"></script>
-<script src="script/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/date.js"></script>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/windchill.js"></script>
 </body>
 </html>
