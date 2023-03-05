@@ -64,12 +64,16 @@
       <!-- Main Grid content -->
       <section class="hero">
         <h2>hero</h2>
-        <picture class="welcome_pic_pink">
-          <source media="(max-width: 34.9rem)" srcset="images/heroSrc/heroSrc_400_low.jpg">
-          <source media="(max-width: 35rem)" srcset="images/heroSrc/heroSrc_650_low.jpg">
-          <source media="(max-width: 70rem)" srcset="images/heroSrc/heroSrc_900_low.jpg">
-          <img src="images/heroSrc/heroSrc_1050_low.jpg" alt="pink hair">
-        </picture>
+        <div class="welcome_pic_pink">
+          <picture>
+            <source media="(max-width: 35rem)" srcset="images/herosrc/heroSrc_400_low.jpg">                                       
+            <source media="(max-width: 65rem)" srcset="images/herosrc/heroSrc_900_low.jpg">
+            <source media="(max-width: 80rem)" srcset="images/herosrc/heroSrc_1050_low.jpg">
+            <img src="images/herosrc/heroSrc_1050_low.jpg" alt="Hero Image">
+          </picture>
+        </div>
+        
+        
 
       </section>
 
@@ -153,9 +157,9 @@
     </div>
   </footer>
 <!-- scripts -->
-<script src="script/hamburger.js"></script>
-<script src="script/date.js"></script>
-<script src="script/currentdate.js"></script>
-<script src="script/windchill.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/date.js"></script>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/windchill.js"></script>
 </body>
 </html>
