@@ -1,0 +1,24 @@
+@media screen and (min-width: 1028px) {
+
+
+
+  header,
+  footer {
+    width: 100%;
+  }
+
+  section {
+    width: fit-content;
+  }
+
+  main figure img {
+    width: 75%;
+  }
+
+
+  main section:nth-child(3) {
+    grid-column: span 1;
+  }
+}
+
+/*end of media query
