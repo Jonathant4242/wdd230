@@ -1,0 +1,96 @@
+/* font css rules
+
+font-family: 'Fira Code', monospace;
+*/
+
+
+/* body */
+body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.font_demos {
+  font-size: 2rem;
+}
+
+.font_demo_1 {
+  font-family: 'Fira Code', monospace;
+}
+
+.font_demo_2 {
+  font-family: monospace;
+}
+
+.font_demo_3 {
+  font-family: Verdana, sans-serif;
+}
+
+.font_demo_4 {
+  font-family: sans-serif;
+}
+
+/* header */
+header,
+footer {
+  background-color: forestgreen;
+  padding: 1rem;
+}
+
+header {
+  font-family: 'Fira Code', monospace;
+  font-size: .8rem;
+  text-align: center;
+
+}
+
+/* main */
+body{
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+main h1,
+main h2,
+main h3,
+main h4,
+main h5 {
+  margin: auto;
+  font-family: 'Fira Code', monospace;
+  text-align: center;
+  background-color: forestgreen;
+  border-style: dotted;
+  border-color: #02645d54;
+}
+
+body img {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+main img[data-src] {
+  filter: blur(0.2em);
+}
+
+main img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+
+
+
+
+/* footer */
+footer {
+  text-align: center;
+}
+
+
+
+/* End of query */

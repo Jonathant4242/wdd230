@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="Johnathan Trok" content="WDD230 week 7 project">
+  <meta name="description" content="Lazy loading assignment">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazy Loading</title>
+
+  <!-- The styles links -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div>
+    <h1>Lazy Loading</h1>
+    <h2>Johnathan Trok</h2>
+    </div>
+  </header>
+<main>
+    <img src="http://placekitten.com/200/300" data-src="https://picsum.photos/id/1/200/300" alt="Alejandro Escamilla: Person typing on a keyboard." loading="lazy">
+    <img src="http://placekitten.com/200/300" data-src="https://picsum.photos/id/10/200/300" alt="Paul Jarvis: Forest with a blue background." loading="lazy">
+    <img src="http://placekitten.com/200/300" data-src="https://picsum.photos/id/1000/200/300" alt="Lukas Budimaier: Cross on top of a snowy mountain." loading="lazy">
+    <img src="http://placekitten.com/200/300" data-src="https://picsum.photos/id/1003/200/300" alt="E+N Photographies: Dou with a blury background" loading="lazy">
+    <img src="http://placekitten.com/200/300" data-src="https://picsum.photos/id/1010/200/300" alt="Samantha Sophia: Child reading a bible" loading="lazy">
+    <img src="http://placekitten.com/200/300" data-src="https://picsum.photos/id/1022/200/300" alt="Vashishtha Jogi: Tree in the green aurora." loading="lazy">
+    <img src="http://placekitten.com/200/300" data-src="https://picsum.photos/id/1041/200/300" alt="Tim Marshall: wave currling with a blue background and clouds." loading="lazy">
+</main>
+</body>
+<footer>
+  &copy;
+  <span id="currentdate"></span>
+  *|* Johnathan Trok *|* California *|* <br> Last Modified:
+  <span id="modified"></span>
+</footer>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/lazyLoading.js"></script>
+
+</html>
