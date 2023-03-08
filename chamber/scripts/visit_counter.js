@@ -42,6 +42,3 @@ if (timeLapse !== 0) {
 }
 
 console.log("time since last visit " + (timeLapse))
-
-
-

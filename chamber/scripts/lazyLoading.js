@@ -4,7 +4,7 @@ let loadPictures = document.querySelectorAll('img[data-src]');
 // Loading the images, setting placeholder image as src and removing the data-src attribute
 const loadImg = (image) => {
   // Set the placeholder image as the src attribute
-  image.setAttribute('src', 'http://placekitten.com/300/300');
+  image.setAttribute('src', 'https://dummyimage.com/300x300/000000/fff&text=place+holder');
   // Set the actual image as the src attribute once it's loaded
   const imgSrc = image.getAttribute('data-src');
   const img = new Image();
@@ -16,7 +16,7 @@ const loadImg = (image) => {
 };
 
 // Parameters for the image to load on the window.
-const imgParameters = {
+const imgOptions = {
   threshold: 1,
   rootMargin: "0px 0px -100px 0px"
 };
@@ -30,7 +30,7 @@ if('IntersectionObserver' in window) {
         observer.unobserve(item.target);
       }
     });
-  }, imgParameters);
+  }, imgOptions);
   loadPictures.forEach((img) => {
     observer.observe(img);
   });
