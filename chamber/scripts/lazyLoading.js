@@ -1,43 +1,40 @@
-//Selecting all the images with data-src attribute.
+// Selecting all the images with data-src attribute.
 let loadPictures = document.querySelectorAll('img[data-src]');
 
-//loading the images removing the attribute data-src
+// Loading the images, setting placeholder image as src and removing the data-src attribute
 const loadImg = (image) => {
-  image.setAttribute('src', image.getAttribute('data-src'));
-  image.onload = () => {
+  // Set the placeholder image as the src attribute
+  image.setAttribute('src', 'http://placekitten.com/300/300');
+  // Set the actual image as the src attribute once it's loaded
+  const imgSrc = image.getAttribute('data-src');
+  const img = new Image();
+  img.onload = () => {
+    image.setAttribute('src', imgSrc);
     image.removeAttribute('data-src');
   };
+  img.src = imgSrc;
 };
 
-// Set the initial `src` attribute value for all images to the placeholder image URL.
-loadPictures.forEach((img) => {
-  img.setAttribute('src', 'http://placekitten.com/300/300');
-});
-
 // Parameters for the image to load on the window.
-const imgPerameters = {
+const imgParameters = {
   threshold: 1,
   rootMargin: "0px 0px -100px 0px"
 };
 
-// Check if the IntersectionObserver API is supported by the browser.
-if ('IntersectionObserver' in window) {
-  // Create a new IntersectionObserver instance.
+// If is to check if the intersectionObserver is supported, give parameters. Else load the image. 
+if('IntersectionObserver' in window) {
   const observer = new IntersectionObserver((items, observer) => {
     items.forEach((item) => {
-      if (item.isIntersecting) {
+      if(item.isIntersecting) {
         loadImg(item.target);
         observer.unobserve(item.target);
       }
     });
-  }, imgPerameters);
-
-  // Observe all images with a `data-src` attribute.
+  }, imgParameters);
   loadPictures.forEach((img) => {
     observer.observe(img);
   });
-} else {
-  // If the IntersectionObserver API is not supported, load all images immediately.
+} else {     
   loadPictures.forEach((img) => {
     loadImg(img);
   });
