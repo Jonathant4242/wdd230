@@ -8,25 +8,35 @@ const loadImg = (image) => {
     image.removeAttribute('data-src');
   };
 };
-// Parameters for the image to load on the window.
-const imgPerameters = {threshold: 1,
-    rootMargin: "0px 0px -100px 0px"};
 
-// IF is to check if the intersectionObserver is supported, give permators. ELSE load the image. 
-if('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((items, observer) => {
-        items.forEach((item) => {
-        if(item.isIntersecting) {
+// Parameters for the image to load on the window.
+const imgPerameters = {
+  threshold: 1,
+  rootMargin: "0px 0px -100px 0px"
+};
+
+// Check if the IntersectionObserver API is supported by the browser.
+if ('IntersectionObserver' in window) {
+  // Create a new IntersectionObserver instance.
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        // Check if the image's `src` attribute is the basic image URL.
+        if (item.target.getAttribute('src') !== item.target.getAttribute('data-src')) {
           loadImg(item.target);
-          observer.unobserve(item.target);
         }
-      });
-    }, imgPerameters);
-    loadPictures.forEach((img) => {
-      observer.observe(img);
+        observer.unobserve(item.target);
+      }
     });
-  } else {     
-    loadPictures.forEach((img) => {
-      loadImg(img);
-    });
-  };
+  }, imgPerameters);
+
+  // Observe all images with a `data-src` attribute.
+  loadPictures.forEach((img) => {
+    observer.observe(img);
+  });
+} else {
+  // If the IntersectionObserver API is not supported, load all images immediately.
+  loadPictures.forEach((img) => {
+    loadImg(img);
+  });
+}
