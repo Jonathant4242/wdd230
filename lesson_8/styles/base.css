@@ -1,8 +1,9 @@
 :root {
     --main-color: #C8102E; /* dark red */
     --secondary-color: #00529B; /* dark blue */
+    --secondary-color-op: rgba(0, 82, 155, .7); /* dark blue opacity*/
     --accent-color: #FFFFFF; /* white */
-    --background-color: #f8a8a8; /* light gray */
+    --background-color: #f8a8a8; /* light red */
   }
   body{
     padding: .05rem;
@@ -14,20 +15,36 @@
     max-width: 800px;
     margin: 0 auto;
   }
-  
+  thead tr:nth-child(1) th:nth-child(1){
+    padding-left: 5rem;
+  }
+  thead tr:nth-child(2) th:nth-child(2),
+  thead tr:nth-child(2) th:nth-child(3),
+  thead tr:nth-child(2) th:nth-child(4){
+    background-color: var(--secondary-color-op);
+  }
   th,
   td {
     padding: 8px;
     text-align: left;
-    border-bottom: 1px solid var(--main-color);
+    /* border-bottom: 1px solid var(--main-color); */
   }
   
   th {
     background-color: var(--secondary-color);
     color: var(--accent-color);
   }
-  
+  tbody td{
+    border: 1px solid var(--main-color);
+  }
   tbody tr:nth-child(even) {
     background-color: var(--background-color);
+  }
+  caption{
+    caption-side: bottom;
+    text-align: center;
+    font-size: .9rem;
+    color: var(--main-color);
+    padding: 1rem;
   }
   
