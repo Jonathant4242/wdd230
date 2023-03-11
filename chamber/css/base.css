@@ -156,6 +156,23 @@ nav ul.open {
 
 /* MAIN */
 
+/* bb is to see grid containers */
+.bb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: #5F8D4E;
+  /* border-color: black; */
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: column;
+}
+
 main {
 padding: 1rem;
 }
@@ -184,7 +201,7 @@ padding: 1rem;
   grid-column: span 2;
 }
 
-/* WELCOME TO DRACKO PICTURE */
+/* WELCOME TO Rapel */
 .hero {
   display: flex;
   margin: 10px;
@@ -272,20 +289,11 @@ padding: 1rem;
   display: none;
 }
 
-/* bb is to see grid containers */
-.bb {
-  display: flex;
-  flex-wrap: wrap;
+/* event */
+.event{
   padding: 1rem;
-  background-color: #5F8D4E;
-  /* border-color: black; */
-  border-width: 5px;
-  border-color: black;
-  border-style: solid;
-  justify-content: center;
-  align-content: flex-start;
-}
 
+}
 
 /* footer */
 footer div a {
@@ -295,7 +303,8 @@ footer div a {
 footer div address,
 footer div h4,
 .creatorInfo {
-  margin: 1rem;
+  margin: .2rem;
+  margin: 0px;
 }
 
 /* footer grid */
