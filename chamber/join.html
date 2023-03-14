@@ -57,50 +57,53 @@
     <main>
       <h2 class="title">Join the Chamber</h2>
       <h4>Joining the chamber's busniness discover page. Just fill out the form below and we will get back to you as soon as possible.</h4>
-      <form action="get" method="thankyou.html">
-        <!-- hidden time stamp -->
-        <input type="hidden" name="timestamp" value="">
-        <!-- personal info -->
-        <fieldset>
-            <legend>Personal Information<br>Required*</legend>
-            <label class="top">First Name*<input type="text" name="first_name" placeholder="First Name" required></label><br><br>
-            <label class="top">Last Name*<input type="text" name="last_name" placeholder="Last Name" required></label><br><br>
-            <label class="top">Moble Number*<input type="tel" name="personal_phone" placeholder="###-###-####" required></label><br><br>
-            <label class="top">Email Address*<input type="email" name="personal_email" placeholder="email@gmail.com" required></label><br><br>
-        </fieldset>
-        <br><br>
-        <!-- company info -->
-        <fieldset>
-            <legend>Business Information<br>Required*</legend>
-            <label class="top">Business Name*<input type="text" name="business_name" placeholder="Business Name" required></label><br><br>
-            <label class="top">Business Address*<input type="text" name="business_address" placeholder="address" required></label><br><br>
-            <label class="top">Business City*<input type="text" name="business_city" placeholder="city" required></label><br><br>
-            <label class="top">Business State*<input type="text" name="business_state" placeholder="state" required></label><br><br>
-            <label class="top">Business Zip*<input type="text" name="business_zip" placeholder="zip" required></label><br><br>
-            <label class="top">Business Phone*<input type="tel" name="business_phone" placeholder="###-###-####" required></label><br><br>
-            <label class="top">Business Email<input type="email" name="business_email" placeholder="Not Required"></label><br><br>
-            <label class="top">Business Website<input type="url" name="business_website" placeholder="Not Required"></label><br><br>
-        </fieldset>
-        <br><br>
-        <!-- membership level -->
-        <fieldset>
-            <legend>Membership Level<br>Required*</legend>
-            <label class="top">Membership Level*<select name="membership_level" required>
-                <option value="non_profit">Non-Profit</option>
-                <option value="bronze">Bronze Membership</option>
-                <option value="silver">Silver Membership</option>
-                <option value="gold">Gold Membership</option>
-            </select>
-            </label>
-        </fieldset>
-        <br><br>
-        <!-- description -->
-        <fieldset>
-            <legend>Business Description<br>Required*</legend>
-            <label class="top"><textarea style="height: 125px;" name="business_description" placeholder="Please describe your business breifly to better display content." required></textarea></label><br><br>
-        <!-- submit button -->
-        <input type="submit" value="Submit" class="submitBtn">
-      </form>
+        <form action="thankyou.html" method="get">
+            <!-- hidden time stamp -->
+            <input type="hidden" name="timestamp" value="">
+            <!-- personal info -->
+            <fieldset>
+                <legend>Personal Information<br>Required*</legend>
+
+                <label class="top">First Name*<input type="text" name="first_name" placeholder="First Name" required></label><br><br>
+                <label class="top">Last Name*<input type="text" name="last_name" placeholder="Last Name" required></label><br><br>
+                <label class="top">Moble Number*<input type="tel" name="personal_phone" placeholder="###-###-####" required></label><br><br>
+                <label class="top">Email Address*<input type="email" name="personal_email" placeholder="email@gmail.com" required></label><br><br>
+            </fieldset>
+            <br><br>
+            <!-- company info -->
+            <fieldset>
+                <legend>Business Information<br>Required*</legend>
+
+                <label class="top">Business Name*<input type="text" name="business_name" placeholder="Business Name" required></label><br><br>
+                <label class="top">Business Address*<input type="text" name="business_address" placeholder="address" required></label><br><br>
+                <label class="top">Business City*<input type="text" name="business_city" placeholder="city" required></label><br><br>
+                <label class="top">Business State*<input type="text" name="business_state" placeholder="state" required></label><br><br>
+                <label class="top">Business Zip*<input type="text" name="business_zip" placeholder="zip" required></label><br><br>
+                <label class="top">Business Phone*<input type="tel" name="business_phone" placeholder="###-###-####" required></label><br><br>
+                <label class="top">Business Email<input type="email" name="business_email" placeholder="Not Required"></label><br><br>
+                <label class="top">Business Website<input type="url" name="business_website" placeholder="Not Required"></label><br><br>
+            </fieldset>
+            <br><br>
+            <!-- membership level -->
+            <fieldset>
+                <legend>Membership Level<br>Required*</legend>
+                <label class="top">Membership Level*
+                    <select name="membership_level" required>
+                        <option value="non_profit">Non-Profit</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+            </fieldset>
+            <br><br>
+            <!-- description -->
+            <fieldset>
+                <legend>Business Description<br>Required*</legend>
+                <label class="top"><textarea style="height: 125px;" name="business_description" placeholder="Please describe your business breifly to better display content." required></textarea></label><br><br>
+            <!-- submit button -->
+            <input type="submit" value="Submit" class="submitBtn">
+        </form>
     </main>
     <!-- member ship details -->
     <section id="membership_level">
