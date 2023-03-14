@@ -101,7 +101,16 @@
             <fieldset>
                 <legend>Business Description<br>Required*</legend>
                 <label class="top"><textarea style="height: 125px;" name="business_description" placeholder="Please describe your business breifly to better display content." required></textarea></label><br><br>
-            <!-- submit button -->
+            </fieldset>
+            <br><br>
+            <!-- payment info -->
+            <fieldset>
+                <legend>Payment Information<br>Required*</legend>
+                <label class="top">Card Number*<input type="text" name="card_number" placeholder="#### #### #### ####" required></label><br><br>
+                <label class="top">Expiration Date*<input type="text" name="expiration_date" placeholder="MM/YY" required></label><br><br>
+                <label class="top">CVV*<input type="text" name="cvv" placeholder="###" required></label><br><br>
+            </fieldset>
+                <!-- submit button -->
             <input type="submit" value="Submit" class="submitBtn">
         </form>
     </main>
