@@ -44,19 +44,98 @@
             <a href="http://facebook.com"><img src="images/facebook_24x24.jpg" alt="facebook icon a blue circle"></a>
             <a href="http://youtube.com"><img src="images/youtube_24x24.png" alt="youtube icon a red circle"></a>
           </li>
-        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
         <li>Directory</li>
-        <li><a href="join.html">Join</a></li>
+        <li class="active"><a href="join.html">Join</a></li>
         <li>Contact</li>
       </ul>
     </nav>
   </header>
 
+    <!-- main -->
+    <main>
+      <h2 class="title">Join the Chamber</h2>
+      <h4>Joining the chamber's busniness discover page. Just fill out the form below and we will get back to you as soon as possible.</h4>
+      <form action="get" method="thankyou.html">
+        <!-- hidden time stamp -->
+        <input type="hidden" name="timestamp" value="">
+        <!-- personal info -->
+        <fieldset>
+            <legend>Personal Information<br>Required*</legend>
+            <label class="top">First Name*<input type="text" name="first_name" placeholder="First Name" required></label><br><br>
+            <label class="top">Last Name*<input type="text" name="last_name" placeholder="Last Name" required></label><br><br>
+            <label class="top">Moble Number*<input type="tel" name="personal_phone" placeholder="###-###-####" required></label><br><br>
+            <label class="top">Email Address*<input type="email" name="personal_email" placeholder="email@gmail.com" required></label><br><br>
+        </fieldset>
+        <br><br>
+        <!-- company info -->
+        <fieldset>
+            <legend>Business Information<br>Required*</legend>
+            <label class="top">Business Name*<input type="text" name="business_name" placeholder="Business Name" required></label><br><br>
+            <label class="top">Business Address*<input type="text" name="business_address" placeholder="address" required></label><br><br>
+            <label class="top">Business City*<input type="text" name="business_city" placeholder="city" required></label><br><br>
+            <label class="top">Business State*<input type="text" name="business_state" placeholder="state" required></label><br><br>
+            <label class="top">Business Zip*<input type="text" name="business_zip" placeholder="zip" required></label><br><br>
+            <label class="top">Business Phone*<input type="tel" name="business_phone" placeholder="###-###-####" required></label><br><br>
+            <label class="top">Business Email<input type="email" name="business_email" placeholder="Not Required"></label><br><br>
+            <label class="top">Business Website<input type="url" name="business_website" placeholder="Not Required"></label><br><br>
+        </fieldset>
+        <br><br>
+        <!-- membership level -->
+        <fieldset>
+            <legend>Membership Level<br>Required*</legend>
+            <label class="top">Membership Level*<select name="membership_level" required>
+                <option value="non_profit">Non-Profit</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+            </label>
+        </fieldset>
+        <br><br>
+        <!-- description -->
+        <fieldset>
+            <legend>Business Description<br>Required*</legend>
+            <label class="top"><textarea style="height: 125px;" name="business_description" placeholder="Please describe your business breifly to better display content." required></textarea></label><br><br>
+        <!-- submit button -->
+        <input type="submit" value="Submit" class="submitBtn">
+      </form>
+    </main>
+    <!-- member ship details -->
+    <section id="membership_level">
+        <h2 class="title"id="membership_title">Membership Levels</h2>
+        <div class="bb membership"id="non_p_detail">
+            <h3>Non-Profit Membership</h3>
+            <p>Membership price per month: $25</p>
+            <p>Rotation on main page: Every 3 months</p>
+            <p>Location on discover page: Listed under non-profit organizations</p>
+        </div>
+        <br>
+        <div class="bb membership" id="bronze_detail">
+            <h3>Bronze Membership</h3>
+            <p>Membership price per month: $50</p>
+            <p>Rotation on main page: Every month</p>
+            <p>Location on discover page: Listed under bronze members</p>
+        </div>
+        <br>
+        <div class="bb membership" id="silver_detail">
+            <h3>Silver Membership</h3>
+            <p>Membership price per month: $100</p>
+            <p>Rotation on main page: Every week</p>
+            <p>Location on discover page: Listed under silver members</p>
+        </div>
+        <br>
+        <div class="bb membership" id="gold_detail">
+            <h3>Gold Membership</h3>
+            <p>Membership price per month: $200</p>
+            <p>Rotation on main page: Every day</p>
+            <p>Location on discover page: Listed under gold members</p>
+        </div>
+        <br>
+        <br>
+    </section>
 
-
-
-  
   <!-- footer -->
 <footer>
     <!-- footer image -->
@@ -92,6 +171,7 @@
     </div>
   </footer>
 <!-- scripts -->
+<script src="scripts/time_stamp.js"></script>
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/date.js"></script>
 <script src="scripts/currentdate.js"></script>
