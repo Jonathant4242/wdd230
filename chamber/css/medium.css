@@ -173,8 +173,35 @@ article:nth-child(odd) .discover_artical {
   grid-row: 1;
 }
 
+/* join */
+#membership_level{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .3fr 1fr 1fr;
+  margin: 1em;
+  grid-gap: 1em;
+  direction: ltr;
+  
+}
+.membership{
+  width: .8fr;
+}
 
-
-
+#non_p_detail{
+  grid-column: 1;
+  grid-row: 2;
+}
+#bronze_detail{
+  grid-column: 2;
+  grid-row: 2;
+}
+#silver_detail{
+  grid-column: 1;
+  grid-row: 3;
+}
+#gold_detail{
+  grid-column: 2;
+  grid-row: 3;
+}
 /* end of media query */
 }
