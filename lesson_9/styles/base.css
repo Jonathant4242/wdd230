@@ -7,43 +7,10 @@
   }
   body{
     padding: .05rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
   }
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 800px;
+  section{
+    max-width: 65%;
     margin: 0 auto;
+    color: var(--secondary-color);
   }
-  thead tr:nth-child(1) th:nth-child(1){
-    padding-left: 5rem;
-  }
-  thead tr:nth-child(2) th:nth-child(2),
-  thead tr:nth-child(2) th:nth-child(3),
-  thead tr:nth-child(2) th:nth-child(4){
-    background-color: var(--secondary-color-op);
-  }
-  th,
-  td {
-    padding: 8px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: var(--secondary-color);
-    color: var(--accent-color);
-  }
-  tbody td{
-    border: 1px solid var(--main-color);
-  }
-  tbody tr:nth-child(even) {
-    background-color: var(--background-color);
-  }
-  caption{
-    caption-side: bottom;
-    text-align: center;
-    font-size: .9rem;
-    color: var(--main-color);
-    padding: 1rem;
-  }
-  
