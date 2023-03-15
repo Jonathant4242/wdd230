@@ -183,9 +183,9 @@ article:nth-child(odd) .discover_artical {
   direction: ltr;
   
 }
-.membership{
-  width: .8fr;
-}
+/* .membership{
+  width: 100%;
+} */
 
 #non_p_detail{
   grid-column: 1;
