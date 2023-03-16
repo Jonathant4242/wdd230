@@ -1,16 +1,46 @@
 :root {
     --main-color: #C8102E; /* dark red */
-    --secondary-color: #00529B; /* dark blue */
+    --secondary-color: #5b86ac; /* dark blue */
     --secondary-color-op: rgba(0, 82, 155, .7); /* dark blue opacity*/
     --accent-color: #FFFFFF; /* white */
     --background-color: #f8a8a8; /* light red */
   }
+
+  header,main,footer{
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    padding: 1rem;
+    margin: 1.5rem;
+  }
   body{
     padding: .05rem;
     font-family: sans-serif;
+    background-color: var(--accent-color);
   }
   section{
-    max-width: 65%;
-    margin: 0 auto;
+    margin: auto;
+    max-width: 50%;
     color: var(--secondary-color);
+
+  }
+  img{
+    background-color: var(--secondary-color-op);
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards{
+    background-color: var(--background-color);
+    padding: 1rem;
+    display: grid;
+    align-items: center;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 15px;
+    border: #5b86ac 1px solid;
+
+    
   }
