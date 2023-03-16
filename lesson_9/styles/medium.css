@@ -3,7 +3,7 @@
  .cards{
     display: grid;
     align-items: center;
-    grid-template-columns: Repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: Repeat(auto-fit, minmax(300px, 1fr)); */
     grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   }
 
