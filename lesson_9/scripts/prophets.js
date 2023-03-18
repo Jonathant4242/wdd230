@@ -14,24 +14,24 @@ function displayProphetData(prophets) {
 
   prophets.forEach((prophet) => {
     let card = document.createElement("section"); // create a section element
-    let h2 = document.createElement("h2"); // create an h2 element
-    let birthdate = document.createElement("p"); // create a p element
-    let birthplace = document.createElement("p"); // create a p element
-    let death = document.createElement("p"); // create a p element
-    let length = document.createElement("p"); // create a p element
-    let order = document.createElement("p"); // create a p element
-    let numofchildren = document.createElement("p"); // create a p element
-    let image = document.createElement("img"); // create an img element
-    let portrait = document.createElement("img"); // create an img element
+    let h2 = document.createElement("h2"); // create an h2 element for the name
+    let birthdate = document.createElement("p"); // create a p element for birthdate
+    let birthplace = document.createElement("p"); // create a p element for birthplace
+    let death = document.createElement("p"); // create a p element for death
+    let length = document.createElement("p"); // create a p element for length
+    let order = document.createElement("p"); // create a p element for order
+    let numofchildren = document.createElement("p"); // create a p element for numofchildren
+    let image = document.createElement("img"); // create an img element for image
+    let portrait = document.createElement("img"); // create an img element  for portrait
 
 
 
-    h2.textContent = `${prophet.name} ${prophet.lastname}`; // set the text content of the h2 element
-    birthdate.textContent = `Date of Birth: ${prophet.birthdate}`; // set the text content of the p element
-    birthplace.textContent = `Place of Birth: ${prophet.birthplace}`; // set the text content of the p element
-    numofchildren.textContent = 'Children: ' + prophet.numofchildren; // set the text content of the p element
-    length.textContent = 'Prophet Years: ' + prophet.length; // set the text content of the p element
-    death.textContent = 'Date of Death: ' + prophet.death; // set the text content of the p element
+    h2.textContent = `${prophet.name} ${prophet.lastname}`; // set the text content of the h2 element to the prophet's name
+    birthdate.textContent = `Date of Birth: ${prophet.birthdate}`; // set the text content of the p element for birthdate
+    birthplace.textContent = `Place of Birth: ${prophet.birthplace}`; // set the text content of the p element for place of birth
+    numofchildren.textContent = 'Children: ' + prophet.numofchildren; // set the text content of the p element for number of children
+    length.textContent = 'Prophet Years: ' + prophet.length; // set the text content of the p element for length
+    death.textContent = 'Date of Death: ' + prophet.death; // set the text content of the p element for date of death
     
     image.setAttribute("src", prophet.imageurl); // set the src attribute of the img element
     image.setAttribute("alt", `${prophet.name} ${prophet.lastname} - ${prophet.order}`); // set the alt attribute of the img element
