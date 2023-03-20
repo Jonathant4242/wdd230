@@ -1,6 +1,6 @@
 // Path: chamber/scripts/business_info.js
 
-const dataUrl = '/chamber/data.json';
+const dataUrl = 'data.json';
 
 async function getBusinessInformation() {
   const response = await fetch(dataUrl);
