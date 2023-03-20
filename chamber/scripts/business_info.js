@@ -44,7 +44,7 @@ function displayBusinessInformationCards(business) {
     cardMembership.classList.add('card-text');
     cardLink.href = business.url;
     cardLink.classList.add('btn', 'btn-primary');
-    cardLink.textContent = 'Click HereVisit Website';
+    cardLink.textContent = 'Click Here Visit Website';
 
     // append the elements to the card
     cardBody.appendChild(cardTitle);
