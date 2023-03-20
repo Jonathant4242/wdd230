@@ -15,6 +15,7 @@ function displayBusinessInformationCards(business) {
   const tableDiv = document.querySelector('div.table');
 
   // create cards for each business in the array
+  // keys: name, address, phone, description, membershipLevel, url, imageurl
   business.forEach((business) => {
     let card = document.createElement('section');
     let img = document.createElement('img');
