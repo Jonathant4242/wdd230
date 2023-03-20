@@ -1,5 +1,5 @@
 {
-    "Gold": [
+    "businessInfo": [
         {
             "name": "Empanada Man",
             "address": "20761 Lake Forest Dr. Lake Forest, CA 92630",
@@ -27,10 +27,7 @@
             "membershipLevel": "Gold",
             "description": "Helicopter tours of the San Juan Mountains, Telluride, Ouray, and the Black Canyon of the Gunnison.",
             "imageurl": "https://thirdedgeheli.com/wp-content/uploads/white-mobile-1.png"
-        }
-    
-    ],
-    "Silver": [
+        },
         {
             "name": "Sa Expeditions",
             "address": "350 Rhode Island St Ste 240, San Francisco, CA 94103",
@@ -48,9 +45,7 @@
             "membershipLevel": "Silver",
             "description": "WE CREATE AMAZING VISUALS AND TRAVEL GUIDES TO UNIQUE DESTINATIONS AROUND THE WORLD.",
             "imageurl": "https://www.piscoandbier.com/wp-content/uploads/2020/11/logo-piscoandbier.jpeg"
-        }
-    ],
-    "Bronze": [
+        },
         {
             "name": "NOI Hotels",
             "address": "Alonso de Monroy 2677, Office 601, Santiago, 76307",
@@ -68,9 +63,7 @@
             "membershipLevel": "Bronze",
             "description": null,
             "imageurl": "https://www.enel.cl/etc/designs/enel-cl/img/enel-logo.png"
-        }
-    ],
-    "Non-Profit": [
+        },
         {
             "name": "African Wildlife Foundation",
             "address": "AWF Conservation Centre Ngong Road, Karen P.O. Box 310, 00502",
