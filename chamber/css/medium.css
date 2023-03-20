@@ -202,6 +202,28 @@ article:nth-child(odd) .discover_artical {
 #gold_detail{
   grid-column: 2;
   grid-row: 3;
+
 }
+
+
+/* directory - card */
+.cards {
+  grid-template-columns: 1fr 1fr;
+}
+
+.btn-primary {
+  font-size: 1rem;
+}
+
+
+
+/* directory - Table */
+table tr td:nth-child(3), table tr th:nth-child(3),
+table tr td:nth-child(2), table tr th:nth-child(2) 
+{
+  display: block;
+}
+
+
 /* end of media query */
 }

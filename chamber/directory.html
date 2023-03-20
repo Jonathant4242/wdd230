@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory</title>
+    <meta name="description" content="Rapel Lake Chambers directory page. Local businesses that are active in our comnity.">
+    
+    <link rel="stylesheet" href="/chamber/css/normalize.css">
+    <link rel="stylesheet" href="/chamber/css/base.css">
+    <link rel="stylesheet" href="/chamber/css/medium.css">
+    <link rel="stylesheet" href="/chamber/css/large.css">
+
+</head>
+<body>
+      <!-- Header -->
+    <header>
+        <img src="images/rapel_logo_400w_low.jpg" alt="Rapel in multy color" width="130" height="160">
+        <h1 class="title">
+          Rapel Lake Chamber of Commerce
+        </h1>
+        <h2>The Party Doesn't Stop</h2>
+        <!--today's date fromat requirment: Day, Date month year. EXAMPLE: Wednesday, 24 July 2020. -->
+        <div class="date"></div>
+        <div class="date" id="banner">'🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.'</div>
+        <!-- social media -->
+      
+        <!-- Nav -->
+        <nav>
+          <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+          <ul id="mainNav">
+              <li class="social_media">
+                <a href="http://facebook.com"><img src="images/facebook_24x24.jpg" alt="facebook icon a blue circle"></a>
+                <a href="http://youtube.com"><img src="images/youtube_24x24.png" alt="youtube icon a red circle"></a>
+              </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li class="active"><a href="directory/directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <h1>Directory</h1>
+        <button id="toggle-button">Toggle Display</button>
+        <div class="cards">
+        </div>
+        <div class="table">
+        </div>
+    </main>
+<!-- footer -->
+<footer>
+    <!-- footer image -->
+    <img src="/chamber/images/rapel_logo_400w_low.jpg" alt="logo that says rapel with a map of the lake" width="120">
+  
+    <!-- footer left side -->
+    <div class="chamberInfo">
+      <h4 class="title">Lake Rapel</h4>
+      <address>Embalse Rapel<br>
+        Las Cabras, O'Higgins, Chile</address>
+    </div>
+  
+    <!-- Right side -->
+    <div class="footer_right">
+      <section class="contactInfo">
+        <h4 class="title">Contact Info</h4>
+        <a href="mailto:"> LakeRapelVacation@gmail.com</a><br>
+        <a href="tel:">+56 9 1234 0508</a><br>
+  
+        <!-- map -->
+        <map name="Lake_Rapel">
+          <a href="https://www.google.com/maps">map info</a>
+        </map>
+      </section>
+    </div>
+  
+    <!-- designer info Must Contain Site name, my name, "WDD230 Project, and last modification date"-->
+    <div class="creatorInfo">
+      *~|~* &copy;
+      <span id="currentdate"></span>
+      *~|~* Johnathan Trok *~|~* California *~|~* WDD230 Project *~|~* Last Modified:
+      <span id="modified"></span>
+    </div>
+  </footer>
+  <script src="scripts/business_info.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/date.js"></script>
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/lazyLoading.js"></script>
+</body>
+</html>

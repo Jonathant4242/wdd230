@@ -1,0 +1,87 @@
+{
+    "businessInfo": [
+        {
+            "name": "Empanada Man",
+            "address": "20761 Lake Forest Dr. Lake Forest, CA 92630",
+            "phone": "949-916-0000",
+            "url": "https://www.empanadamancatering.com/",
+            "membershipLevel": "Gold",
+            "description": "Empanda Pizzeria is a family owned and operated business. We are a full service catering company that specializes in authentic Argentinean empanadas. We also offer a variety of other menu items including pizza, salads, and desserts. We are a mobile catering company.",
+            "imageurl":"https://static.wixstatic.com/media/93774a_7ed4b6c2c27e4b94a8040b0e3f85c738~mv2.png/v1/fill/w_284,h_186,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/EMPANADA-MAN-ICON.png"
+
+        },
+        {
+            "name": "Sunset Watersports Key West",
+            "address": "1000 Atlantic Blvd. Key West, FL 33040",
+            "phone": "305-294-0000",
+            "url": "https://sunsetwatersportskeywest.com/",
+            "membershipLevel": "Gold",
+            "description": "Sunset Watersports Key West is the premier watersports company in Key West. We offer parasailing, jet ski rentals, paddle boarding, and more. We are located at the Key West Bight Marina.",
+            "imageurl":"https://fh-sites.imgix.net/sites/5293/2022/07/25204545/c-1-e1658781982601.png?auto=compress%2Cformat&h=120&fit=max"
+        },
+        {
+            "name": "The Third Edge Helicopter Company",
+            "address": "Isidora Goyenechea 3000, Santiago, 13114, ",
+            "phone": "1-970-456-7757",
+            "url": "https://thirdedgeheli.com/",
+            "membershipLevel": "Gold",
+            "description": "Helicopter tours of the San Juan Mountains, Telluride, Ouray, and the Black Canyon of the Gunnison.",
+            "imageurl": "https://thirdedgeheli.com/wp-content/uploads/white-mobile-1.png"
+        },
+        {
+            "name": "Sa Expeditions",
+            "address": "350 Rhode Island St Ste 240, San Francisco, CA 94103",
+            "phone": "415-549-8049",
+            "url": "https://www.saexpeditions.com/expeditions/7-day-santiago-to-san-pedro-de-atacama-tour?utm_content=rated_1_for_southamerica&utm_source=bing&utm_medium=cpc&utm_campaign=New%20-%20Chile%20Tours&utm_term=%2Bsantiago%20%2Bchile%20%2Band%20%2Bsan%20%2Bpedro%20%2Bde%20%2Batacama%20%2Btravel&matchtype=b&msclkid=433cb70e997a14ddfbcdd31d606e6034",
+            "membershipLevel": "Silver",
+            "description": "Experience affordable luxury South America tours, all private and personalized. SA Expeditions reviews and selects the best hotels and experiences.",
+            "imageurl": "https://www.saexpeditions.com/assets/images/logo-mobile.png"
+        },
+        {
+            "name": "Piscoandbier",
+            "address": null,
+            "phone": null,
+            "url": "https://www.piscoandbier.com/chile-best-hot-springs/",
+            "membershipLevel": "Silver",
+            "description": "WE CREATE AMAZING VISUALS AND TRAVEL GUIDES TO UNIQUE DESTINATIONS AROUND THE WORLD.",
+            "imageurl": "https://www.piscoandbier.com/wp-content/uploads/2020/11/logo-piscoandbier.jpeg"
+        },
+        {
+            "name": "NOI Hotels",
+            "address": "Alonso de Monroy 2677, Office 601, Santiago, 76307",
+            "phone": "+56 22 432 6800",
+            "url": "https://www.noihotels.com/spa",
+            "membershipLevel": "Bronze",
+            "description": " A visit to a NOI Hotel spa delivers all of this and more. Our luxury spa destinations deliver comfort and offer a release from the harmful effects of stress and fatigue.",
+            "imageurl": "https://image-tc.galaxy.tf/wisvg-6qlwlwrv67l3qww70ffef2kqs/noi-portal-scroll-logo.svg?width=500"
+        },
+        {
+            "name": "Enel",
+            "address": "76,Avenida Santa Rosa 8330099 Santiago Metropolitana de Santiago",
+            "phone": "+56 600 696 0000",
+            "url": "https://www.enel.cl/",
+            "membershipLevel": "Bronze",
+            "description": null,
+            "imageurl": "https://www.enel.cl/etc/designs/enel-cl/img/enel-logo.png"
+        },
+        {
+            "name": "African Wildlife Foundation",
+            "address": "AWF Conservation Centre Ngong Road, Karen P.O. Box 310, 00502",
+            "phone": "+254 711 063 000",
+            "url": "https://secure.awf.org/page/114039/donate/1?utm_source=sembcheetahfunddo&utm_medium=cpc&utm_campaign=SEMCheetahFundraising&supporter.appealCode=B23Q01E01R&msclkid=b501363a595c12a61d37522f18bbd173&utm_term=donate%20to%20save%20cheetahs&utm_content=Cheetah%20Donate",
+            "membershipLevel": "Non-Profit",
+            "description": "Can you imagine a world without cheetahs?",
+            "imageurl": "https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25…cf5.rackcdn.com/2320/logo-awf.png?v=1657570835000"
+        },
+        {
+            "name": "The Church of Jesus Christ of Latter-Day Saints | Pilanthropy",
+            "address": "Philanthropies 1450 N. University Ave. Provo, UT 84604",
+            "phone": "1-800-525-8074",
+            "url": "https://donate.churchofjesuschrist.org/donations/church/humanitarian-services/humanitarian-aid-fund.html?cde2=667&cid=latter-day-saint-charities-home&&lang=eng",
+            "membershipLevel": "Non-Profit",
+            "description": "Donate to the Church of Jesus Christ of Latter-Day Saints, its affiliated charities, and its educational institutions. 100% of each donation goes to the fund you choose, and does not cover any administrative overhead.",
+            "imageurl": "https://donate.churchofjesuschrist.org/Content/img/PHI-lockup-black-418x100.png"
+        }
+    ] 
+}
+ 
