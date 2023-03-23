@@ -7,6 +7,7 @@
   div.maingrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: repeat(auto-fit, minmax(300px, 1fr)); */
   }
 /* Nav button */
 
@@ -65,11 +66,13 @@ nav button {
   .weather {
     grid-column: 1;
     grid-row: 2;
+    object-fit: contain;
   }
 
   .news {
     grid-column: 2 / 4;
-    grid-row: 4;
+    grid-row: 3 / 5;
+    /* object-fit: contain; */
   }
 
   .spotlight {
@@ -79,11 +82,17 @@ nav button {
     grid-row: 1 / 5;
   }
 
-  /* .weather {}
+  .weather {
+    grid-column: 1 /2;
+    grid-row: 2 / 3;
+  }
 
   .join {}
 
-  .news {} */
+  .news {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+  }
 
 
   /* footer */

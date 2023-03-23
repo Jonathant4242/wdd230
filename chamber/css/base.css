@@ -171,6 +171,7 @@ nav ul.open {
   align-items: center;
   align-content: space-around;
   flex-direction: column;
+  max-width: 1fr;
 }
 
 main {
@@ -243,8 +244,9 @@ padding: 1rem;
   /* max-width: 475px; */
 }
 .welcome_pic_pink  img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
+  object-fit: contain;
 }
 
 .social_media {
