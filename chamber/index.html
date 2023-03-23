@@ -96,16 +96,23 @@
 
 <!-- WEATHER -->
 
-      <section class="weather bb">
-        <h2>Weather</h2>
-        <img class="sun" src="images/weather.med.300px.jpg"
-          alt="Image of the sun with clouds in front of it. With a light blue sky." height="150">
-        <div class="temp">
-          <h2><span id="temp">30</span>&#730;F</h2> <!-- Temp -->
-          <h3>Partly Cloudy</h3> <!-- conditions -->
-          <p><b>Wind Speed: </b><span id="speed">10</span>mp/h</p><br> <!-- wind speed and with a line break humidity-->
-          <p><b>Wind Chill: </b><span id="chill"></span></p>
-          <p><b>Humidity: </b><span id="humidity">75</span>%</p>
+      <section class="weather">
+        <section>
+            <h2>Temperature</h2>
+            <figure>
+                <img id="weather-icon" alt="weather icon">
+                <figcaption></figcaption>
+            </figure>
+            <p><strong>Current temperature:</strong><br> <span id="current-temp"></span> &deg;F</p>
+        </section>
+          <section>
+            <h3>Wind</h3>
+            <p><strong>Wind speed:</strong><br><span id="wind-speed"></span></p>
+            <p><strong>Wind chill:</strong><br><span id="wind-chill"></span></p>
+        </section>
+        <section>
+            <p><strong>Humidity:</strong><br><span id="humidity"></span></p>
+        </section>
         </div>
       </section>
 
@@ -115,9 +122,7 @@
         <h2>Press Release:</h2>
         <h3>Bird Watchers</h3>
         <picture class="welcome_pic_pink">                                      
-          <source media="(max-width: 35rem)" srcset="images/content/StockSnap_EE1VQPC229_Bird_400.jpg">
-          <source media="(max-width: 80rem)" srcset="images/content/StockSnap_EE1VQPC229_Bird_900.jpg">
-          <img src="images/content/StockSnap_EE1VQPC229_bird_1280.jpg" alt="Bird on the Sand with Orange eyes and beak">
+          <img src="images/content/StockSnap_EE1VQPC229_Bird_400.jpg" alt="Bird on the Sand with Orange eyes and beak">
         </picture>
         <p>Join us for a bird watching event at the lake. We will be looking for the rare birds.</p>
         <h5><a href="https://www.aba.org/birding-clubs-organizations/#CA">Bird Watching Club Details</a></h5>
@@ -216,5 +221,6 @@
 <script src="scripts/date.js"></script>
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/windchill.js"></script>
+<script src="scripts/weatherapi.js"></script>
 </body>
 </html>

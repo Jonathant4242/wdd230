@@ -190,7 +190,12 @@ padding: 1rem;
 /* WEATHER */
 .weather {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto;
+  padding: 1rem;
+  background-color: rgb(95, 141, 78, .7);
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
 }
 
 .sun {
@@ -198,7 +203,7 @@ padding: 1rem;
 }
 
 .weather h2 {
-  grid-column: span 2;
+  grid-column: span 1/3;
 }
 
 /* WELCOME TO Rapel */
