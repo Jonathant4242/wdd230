@@ -23,12 +23,16 @@ async function apiFetch() {
 }
 
 apiFetch();
-
+// 
+// display the results
+// the weatherData parameter is the data returned from the API
+// the data is in JSON format
 function displayResults(weatherData) {
     const tempInCelsius = weatherData.main.temp;
     const tempInFahrenheit = (tempInCelsius * 1.8) + 32;
     currentTemp.innerHTML = `<strong>${tempInFahrenheit.toFixed(0)}</strong>`;
-
+    // set the icon and alt attributes
+    // the iconsrc variable is the path to the icon image
     const iconsrc = "https://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
     weatherIcon.src = iconsrc;
     weatherIcon.alt = weatherData.weather[0].description;
