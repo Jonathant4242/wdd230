@@ -190,6 +190,8 @@ padding: 1rem;
 /* WEATHER */
 .weather {
   display: grid;
+  justify-items: center;
+  justify-content: center;
   grid-template-columns: auto;
   padding: 1rem;
   background-color: rgb(95, 141, 78, .7);
