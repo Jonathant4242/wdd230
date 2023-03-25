@@ -171,7 +171,6 @@ nav ul.open {
   align-items: center;
   align-content: space-around;
   flex-direction: column;
-  max-width: 1fr;
 }
 
 main {
