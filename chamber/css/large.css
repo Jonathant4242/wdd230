@@ -176,5 +176,12 @@ nav button {
   table tr td:nth-child(4), table tr th:nth-child(4){
     display: block;
   }
+.contact_map{
+  max-width: 400px;
+}
+
+aside{
+  max-height: 95%;
+}
 
 }
