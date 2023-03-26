@@ -233,7 +233,6 @@ table tr td:nth-child(2), table tr th:nth-child(2)
   grid-template-columns: 1fr 1fr;
   margin: 1em;
   grid-gap: 1em;
-  direction: left;
 }
 .contact_form{
   grid-column: 1 / 2;
