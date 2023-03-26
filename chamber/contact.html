@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Trok's WDD 230: Rapel Lake Chamber of Commerce Website Layout</title>
+    <meta name="description" content="Rapel Lake Chambers home page.">
+    <!-- icon -->
+    <link rel="shortcut icon" href="images/icon_b2576ac89831b7d5d6ac1ebe514e8d89.ico" type="image/x-icon">
+    <link rel="icon" href="images/icon_b2576ac89831b7d5d6ac1ebe514e8d89.ico" type="image/x-icon">
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <!-- <link rel="stylesheet" href="css/group.css"> -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="initMap()">
+  <!-- Header -->
+  <header>
+    <img src="images/rapel_logo_400w_low.jpg" alt="Rapel in multy color" width="130" height="160">
+    <h1 class="title">
+      Rapel Lake Chamber of Commerce
+    </h1>
+    <h2>The Party Doesn't Stop</h2>
+    <!--today's date fromat requirment: Day, Date month year. EXAMPLE: Wednesday, 24 July 2020. -->
+    <div class="date"></div>
+    <div class="date" id="banner">'🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.'</div>
+    <!-- social media -->
+  
+    <!-- Nav -->
+    <nav>
+      <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+      <ul id="mainNav">
+          <li class="social_media">
+            <a href="http://facebook.com"><img src="images/facebook_24x24.jpg" alt="facebook icon a blue circle"></a>
+            <a href="http://youtube.com"><img src="images/youtube_24x24.png" alt="youtube icon a red circle"></a>
+          </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+    <!-- Main -->
+    <main>
+        <div id="map"></div>
+        <aside>
+            <section>
+                <h2>Visit Us</h2>
+                <address>Embalse Rapel<br>
+                    Las Cabras, O'Higgins, Chile</address>
+                    <br>
+                    <p>Monday-Thursday: 9:00a.m. to 5:00p.m.</p>
+                    <p>Friday: 9:00a.m. to 1p.m.</p>
+                    <p>Saturday-Sunday: Closed</p>
+            </section>
+            <br>
+            <br>
+            <section>      
+                <h2>Contact Us</h2>
+                <p>For more information about the Rapel Lake Chamber of Commerce, please contact us at:</p>
+                <p><a href="tel:+56 9 1234 0508">+56 9 1234 0508</a></p>
+                <p>Email: <a href="mailto:LakeRapelVacation@gmail.com">LakeRapelVacation@gmail.com</a></p>
+            </section>
+        </aside>
+        <section>
+            <h2>Send Us a Message</h2>
+            <form action="contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+
+    </main>
+
+        <footer>
+            <!-- footer image -->
+            <img src="images/rapel_logo_400w_low.jpg" alt="logo that says rapel with a map of the lake" width="120">
+          
+            <!-- footer left side -->
+            <div class="chamberInfo">
+              <h4 class="title">Lake Rapel</h4>
+              <address>Embalse Rapel<br>
+                Las Cabras, O'Higgins, Chile</address>
+            </div>
+          
+            <!-- Right side -->
+            <div class="footer_right">
+              <section class="contactInfo">
+                <h4 class="title">Contact Info</h4>
+                <a href="mailto:LakeRapelVacation@gmail.com">LakeRapelVacation@gmail.com</a><br>
+                <a href="tel:+56 9 1234 0508">+56 9 1234 0508</a><br>
+          
+                <!-- map -->
+                <map name="Lake_Rapel">
+                  <a href="https://www.google.com/maps">map info</a>
+                </map>
+              </section>
+            </div>
+          
+            <!-- designer info Must Contain Site name, my name, "WDD230 Project, and last modification date"-->
+            <div class="creatorInfo">
+              *~|~* &copy;
+              <span id="currentdate"></span>
+              *~|~* Johnathan Trok *~|~* California *~|~* WDD230 Project *~|~* Last Modified:
+              <span id="modified"></span>
+            </div>
+          </footer>
+          <script src="scripts/map.js"></script>
+          <script src="scripts/date.js"></script>
+          <script src="scripts/hamburger.js"></script>
+          <script src="scripts/currentdate.js"></script>
+</body>
+</html>
