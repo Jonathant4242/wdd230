@@ -53,7 +53,7 @@
     </nav>
   </header>
     <!-- Main -->
-    <main>
+    <main class="contact_grid">
         <div id="map"></div>
         <aside>
             <section>
@@ -73,18 +73,38 @@
                 <p><a href="tel:+56 9 1234 0508">+56 9 1234 0508</a></p>
                 <p>Email: <a href="mailto:LakeRapelVacation@gmail.com">LakeRapelVacation@gmail.com</a></p>
             </section>
+            <section>
+              <h2>Points of Contact</h2>
+              <p><strong>President:</strong><br> John Legend</p>
+              <p><a href="tel:+56 9 1234 0508">+56 9 1234 0508</a></p>
+              <br>
+              <p><strong>Vice President:</strong><br> Kelley Clarkson</p>
+              <p><a href="tel:+56 9 1234 0508">+56 9 1234 0508</a></p>
+              <br>
+              <p><strong>Secretary:</strong><br> Matt Smith</p>
+              <p><a href="tel:+56 9 1234 0508">+56 9 1234 0508</a></p>
+              <br>
+              <p><strong>Treasurer:</strong><br> John Snow</p>
+              <p><a href="tel:+56 9 1234 0508">+56 9 1234 0508</a></p>
+              <br>
+              <p><strong>Director:</strong><br> Kelly Slater</p>
+              <p><a href="tel:+56 9 1234 0508">+56 9 1234 0508</a></p>
+            </section>
         </aside>
-        <section>
-            <h2>Send Us a Message</h2>
-            <form action="contact.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" required>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" required></textarea>
-                <input type="submit" value="Send">
-            </form>
+        <br>
+        <form class="contact_form" action="thankyou.html" method="get">
+        <fieldset class="contact_form">
+
+          <legend>Send Us a Message<br>Required*</legend>
+          <label class="top">First Name*<input type="text" name="first_name" placeholder="First Name" required></label><br><br>
+          <label class="top">Last Name*<input type="text" name="last_name" placeholder="Last Name" required></label><br><br>
+          <label class="top">Email Address*<input type="email" name="personal_email" placeholder="email@gmail.com" required></label><br><br>
+          <label class="top"><textarea style="height: 125px;" name="business_description" placeholder="Please Add Message Here" required></textarea></label><br><br>
+          <input type="submit" value="Submit" class="submitBtn">
+       
+        </fieldset>
+      </form>
+        
 
     </main>
 

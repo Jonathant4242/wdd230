@@ -573,3 +573,42 @@ table tr td:nth-child(2), table tr th:nth-child(2)
 .table-hover tbody tr:hover {
   background-color: rgba(0, 0, 0, 0.075);
 }
+
+
+
+/* -------------- CONTACT ----------------- */
+
+
+.contact_map{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 10px solid #E5D9B6;
+  background-color: #5F8D4E;
+  border-radius: 40px;
+  width: 75%;}
+
+aside{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 10px solid #E5D9B6;
+  background-color: #5F8D4E;
+  border-radius: 40px;
+  width: 75%;
+}
+.contact_grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0px;
+  max-width: 100%;
+  transition: 0.3s;
+  border-radius: 5px;
+  overflow: hidden;
+  align-items: center;
+}
