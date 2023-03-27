@@ -1,3 +1,8 @@
+
+
+/* VAR list */
+
+/* palette */
 :root{
 --primary-color: rgb(122, 168, 116);
 --secondary-color: rgb(247, 219, 106);
@@ -7,3 +12,138 @@
 --lighter-background: rgb(253, 250, 246);
 --white: rgb(255, 255, 255);
 }
+
+/* typography */
+:root{
+--font-family: 'Martian Mono', monospace;
+--reg-font-size: 16px;
+--reg-font-weight: 400;
+--bold-font-weight: 700;
+}
+
+
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    padding: .5rem;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+    font-weight: var(--bold-font-weight);
+    font-size: 1.5rem;
+    color: var(--pop-color);
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+  }
+  
+  header p{
+    margin: 0;
+    padding: 0;
+    font-size: var(--reg-font-size);
+    background-color: var(--background);
+  }
+
+  header img {
+    width: 175px;
+    height: 100%;
+    object-fit: contain;
+    background-color: var(--background);
+  }
+
+  header h1 a {
+    color: var(--white);
+    text-decoration: none;
+  }
+
+
+
+/* nav_button */
+nav button {
+    /* margin: .2rem 2vw; */
+    background-color: var(--secondary-color);
+    border: none;
+    font-size: 2rem;
+    color: var(--pop-color);
+  
+  }
+  
+  
+  /* nav */
+  nav ul {
+    font-family: var(--font-family);
+    font-weight: var(--bold-font-weight);
+    list-style: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    display: block;
+    margin: 2rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+  }
+  
+  nav ul a {
+    display: block;
+    padding: .8rem;
+    margin-bottom: 0px;
+    border-top: 0px;
+  }
+  
+  nav ul {
+    padding: .5rem;
+  }
+  
+  .active {
+    padding: 0;
+    margin: 0;
+    background-color: var(--pop-color);
+  }
+  
+  nav ul a:link,
+  nav ul a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* Nav Hover/ active click */
+  nav ul li a:hover,
+  nav ul li a:active {
+    background-color: rgb(216, 100, 169, .5);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: x-large;
+  }
+  
+  /* on / off */
+  
+  nav ul {
+    
+    display: none;
+  }
+  
+  nav ul.open {
+    display: block;
+  }
+  
+  /* Butotn icon */
+  #hamburgerBtn span:nth-child(1) {
+    display: block;
+  }
+  
+  #hamburgerBtn span:nth-child(2) {
+    display: none;
+  }
+  
+  #hamburgerBtn.open span:nth-child(1) {
+    display: none;
+  }
+  
+  #hamburgerBtn.open span:nth-child(2) {
+    display: block;
+  }
