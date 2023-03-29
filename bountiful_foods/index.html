@@ -35,9 +35,13 @@
 
 <body>
     <header>
+      <div class="logo">
       <img src="images/3558096_bar_fruit_juice_smoothie_truck_icon.png" alt="Bountiful Foods Green Truck">
       <h1>Bountiful Foods</h1>
+    </div>
       <p>Locally Grown Ingredients Picked By You</p>
+      <div class="date"></div>
+      <div id="content"></div>
       <nav>
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <ul id="mainNav">
@@ -47,10 +51,54 @@
           <li><a href="fresh.html">Fresh</a></li>
         </ul>
       </nav>
+
     </header>
     
 
+
+
+   <!-- footer -->
+<footer>
+  <div class="logo"> 
+    <!-- footer image -->
+    <img src="images/3558096_bar_fruit_juice_smoothie_truck_icon.png" alt="Bountiful Foods Green Truck">
+  
+    <!-- footer left side -->
+    <section class="footer_left">
+      <h2>Bountiful Foods</h2><br>
+    </div>
+      <p>Store Location</p>
+      <address>19770 Beach Blvd<br>Huntington Beach, CA 92648 </address>
+    </section>
+ 
+ 
+
+  <!-- Right side -->
+  <div class="footer_right">
+    <section class="contactInfo">
+      <h3>Contact Info</h3>
+      <a href="mailto:Bountiful.Food@gmail.com"> Bountiful.Food@gmail.com</a><br><br>
+      <a href="tel:7149636667">(714) 963-6667</a><br><br>
+
+      <!-- map -->
+      <map name="map">
+        <a href="https://www.google.com/maps">Track Our Truck<br><br>Click Here</a>
+      </map>
+    </section><br>
+  </div>
+
+  <!-- designer info Must Contain Site name, my name, "WDD230 Project, and last modification date"-->
+  <div class="creatorInfo">
+    *~|~* &copy;
+    <span id="currentdate"></span>
+    *~|~* Johnathan Trok *~|~* California *~|~* WDD230 Project *~|~* Last Modified:
+    <span id="modified"></span>
+  </div>
+</footer>
+
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/lastmodified.js"></script>
+    <script src="scripts/date.js"></script>
 </body>
 </html>

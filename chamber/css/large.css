@@ -19,6 +19,9 @@ nav button {
   .spot3 {
     display: block;
   }
+  div.spotlight section img {
+    max-width: 300px;
+  }
 
   /* from medium query turn off span 2 */
   .hero,
