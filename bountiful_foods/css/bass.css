@@ -35,7 +35,12 @@ header {
     font-size: 1.5rem;
     color: var(--pop-color);
   }
-  
+  header em {
+    font-size: 1rem;
+    font-weight: var(--reg-font-weight);
+    color: var(--white);
+  }
+
   header h1 {
     margin: 0;
     padding: 0;
@@ -146,4 +151,82 @@ nav button {
   
   #hamburgerBtn.open span:nth-child(2) {
     display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* footer */
+  footer {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+    font-weight: var(--bold-font-weight);
+    font-size: 1rem;
+    color: var(--pop-color);
+  }
+
+  .logo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+  }
+  footer img {
+    width: 100px;
+    height: 100%;
+    object-fit: contain;
+    background-color: var(--background);
+  }
+
+  footer h2{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+  }
+  footer p, footer address {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+  }
+
+  footer p a {
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  footer section a:hover {
+    background-color: var(--pop-color);
+  }
+
+  footer p a:active {
+    color: var(--accent-second-color);
+  }
+
+  footer section a:visited {
+    color: var(--white);
+  }
+
+
+  
+  footer section a:link {
+    text-decoration: underline dotted;
+    color: var(--white);
+    background-color: var(--accent-second-color);
+    padding: 6px;
+    margin: 4px;
   }
