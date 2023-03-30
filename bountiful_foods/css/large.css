@@ -1,1 +1,62 @@
-@media only screen and (min-width: 60rem) {}
+@media only screen and (min-width: 60rem) {
+    header {
+        font-weight: var(--bold-font-weight);
+        font-size: var(--large-font-size);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    header div.logo h1 {
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        flex-direction: column;
+    }
+    
+    div.logo {
+        grid-column: 1/4;
+        grid-row: 1/4;
+    }
+    header p:nth-child(2) {
+        font-weight: var(--bold-font-weight);
+        font-size: var(--large-font-size);
+        grid-row: 4 / 5;
+        grid-column: 1 / 4;
+    }
+    header div.date {
+        font-weight: var(--bold-font-weight);
+        font-size: var(--large-font-size);
+        grid-row: 5 / 6;
+        grid-column: 1 / 4;
+    }
+    div#content {
+        display: flex;
+        justify-content: center;
+        grid-row: 6 / 7;
+        grid-column: 1/4;
+    }
+    nav{
+        font-size: 25px;
+        grid-column: 1 / 3;
+        padding-top: 1rem;
+
+    }
+    ul#mainNav {
+        grid-column: 1 / 3;
+        grid-row: 7/8;
+        justify-content: space-between;
+        padding: 15px;
+        font-size: 20px;
+    }
+    section.social_media {
+        justify-content: center;
+        grid-column: 3/4;
+        grid-row: 7/8;
+    }
+    section.social_media img {
+        width: 60px;
+    }
+    section.social_media :hover {
+        width: 70px;
+    }
+}
