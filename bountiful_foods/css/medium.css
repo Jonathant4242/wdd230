@@ -57,4 +57,38 @@
     section.social_media :hover{
         width: 70px;
       }
+      /* index */
+      main#index_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+
+      /* about_us */
+      main#about_us_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+        main#about_us_grid aside{
+            grid-column: 2/3;
+            grid-row: 1/3;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-content: space-around;
+            margin: 2rem;
+        }
+
+      img.contact_map{
+        display: flex;
+        justify-content: space-between;
+
+        margin: 10px;
+        max-width: 400px;
+        height: 100%;
+        background-color: var(--lighter-background);
+      }
+    
 }

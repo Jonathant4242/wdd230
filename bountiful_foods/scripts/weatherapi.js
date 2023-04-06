@@ -13,8 +13,7 @@ const nextDayTempLowElement = document.querySelector('#next-day-temp-low');
 
 
 // link the API key to the URL
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=-34.2308&lon=-71.4162&units=metric&appid=e23f88d1939249b7c5119619a96d891d";
-
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=33.158093&lon=-117.350594&units=metric&appid=e23f88d1939249b7c5119619a96d891d";
 // fetch the data from the API
 async function apiFetch() {
   try {
@@ -32,6 +31,7 @@ async function apiFetch() {
 }
 
 apiFetch();
+
 
 // display the results
 // the weatherData parameter is the data returned from the API
