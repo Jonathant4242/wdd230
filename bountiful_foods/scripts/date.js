@@ -13,7 +13,7 @@ const content = document.querySelector("#content");
 
 switch (dayOfWeek) {
   case 0:
-    content.innerHTML = "<p>It's Sunday! Our Truck is at Home Come Check Out Our Store In HB</p>";
+    content.innerHTML = "<p>It's Sunday! Our Truck is at Home Come Check Out Our Store In Huntington Beach</p>";
     break;
   case 1:
     content.innerHTML = "<p>It's Monday! Our Truck is Located in Newport Beach</p>";
@@ -22,7 +22,7 @@ switch (dayOfWeek) {
     content.innerHTML = "<p>It's Tuesday! Our Truck is Located in San Celemente</p>";
     break;
   case 3:
-    content.innerHTML = "<p>It's Wednesday! Our Truck is at Home Come Check Out Our Store In HB</p>";
+    content.innerHTML = "<p>It's Wednesday! Our Truck is at Home Come Check Out Our Store In Huntington Beach</p>";
     break;
   case 4:
     content.innerHTML = "<p>It's Thursday! Our Truck is Located in Newport Beach</p>";
