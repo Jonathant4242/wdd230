@@ -221,7 +221,10 @@ main {
     margin: 1rem;
     padding: 1rem;
   }
-
+/* index */
+picture img{
+  max-width: 100%;
+}
 
   /* about us */
   img.contact_map{
