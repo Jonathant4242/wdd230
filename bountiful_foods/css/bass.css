@@ -4,6 +4,7 @@
 
 /* palette */
 :root{
+--text-color: rgb(52, 71, 50);
 --primary-color: rgb(122, 168, 116);
 --secondary-color: rgb(247, 219, 106);
 --secondary-color-light: rgb(247, 219, 106, .5);
@@ -28,6 +29,7 @@ body{
   font-family: var(--font-family);
   font-size: var(--reg-font-size);
   font-weight: var(--reg-font-weight);
+  color: var(--text-color);
 }
 
 /* Header */
@@ -121,7 +123,7 @@ nav button {
   
   nav ul a:link,
   nav ul a:visited {
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
   }
   
@@ -189,7 +191,6 @@ main {
     font-family: var(--font-family);
     font-weight: var(--bold-font-weight);
     font-size: 1rem;
-    color: var(--primary-color);
   }
   main h2, main h3{
     margin: 0;
@@ -206,16 +207,78 @@ main {
     background-color: var(--lighter-background);
   }
   section:nth-child(1) p {
-    color: black;
+    color: var(--text-color);
   }
   section:nth-child(1) h2{
     color: var(--primary-color)
   }
 
+  section, aside{
+    border: var(--accent-second-color) 4px solid;
+    box-shadow: var(--pop-color-light) 1px 2px 15px;
+    border-radius: 7px;
+    background-color: var(--lighter-background);
+    margin: 1rem;
+    padding: 1rem;
+  }
 
 
+  /* about us */
+  img.contact_map{
+    margin: 10px;
+    max-width: 300px;
+    height: 100%;
+    background-color: var(--lighter-background);
+  }
 
+  /* fresh */
+  #fruit-table th,
+  #fruit-table td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #fruit-table th {
+    background-color: var(--background);
+    color: var(--pop-color);
+  }
+  #fruit-table tbody td{
+    border: 1px solid var(--pop-color);
+  }
+  #fruit-table tbody tr:nth-child(even) {
+    background-color: var(--secondary-color-light);
+  }
 
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: var(--font-family);
+    font-weight: var(--bold-font-weight);
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  form legend{
+    color: var(--primary-color);
+    font-weight: var(--bold-font-weight);
+  }
+  form fieldset{
+    border: var(--accent-second-color) 4px solid;
+    box-shadow: var(--pop-color-light) 0px 2px 15px;
+    border-radius: 7px;
+    background-color: var(--secondary-color-light);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  form fieldset label{
+    margin: 1rem;
+    padding: 1rem;
+  }
+  #fruit-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
 
 
 
