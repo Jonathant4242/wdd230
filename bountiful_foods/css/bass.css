@@ -296,7 +296,7 @@ picture img{
     align-items: center;
     font-family: var(--font-family);
     font-weight: var(--bold-font-weight);
-    font-size: 1rem;
+    font-size: .75rem;
     color: var(--pop-color);
   }
 
