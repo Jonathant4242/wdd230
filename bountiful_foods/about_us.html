@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- title & discription-->
-    <!-- compelet!!! -->
-    <title></title>
-    <meta name="description" content="">
+    <title>Bountiful Foods</title>
+    <meta name="description" content="Bountiful Foods is a local grocery store that is active in our community.">
     
     <!-- meta -->
     <meta name="keywords" content="bountiful foods, boutiful food, fresh fruit shake, juice, strawberries, mangos, healthy drinks, smoothie recipes, blended beverages, tropical fruits, vitamin C, antioxidants, plant-based, natural sweeteners, refreshing beverages, summer drinks, energy boost, hydration, immune system support, weight loss, dairy-free, healthy, health, gut health">
@@ -20,7 +19,7 @@
     
     <!-- css -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/bass.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     
@@ -32,3 +31,171 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
+
+<body onload="initMap()">
+    <header>
+      <div class="logo">
+      <img src="images/3558096_bar_fruit_juice_smoothie_truck_icon.png" alt="Bountiful Foods Green Truck">
+      <h1>Bountiful Foods</h1>
+      </div>
+      <p>Locally Grown Ingredients Picked By You</p>
+      <div class="date"></div>
+      <div id="content"></div>
+      <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="mainNav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="sources.html">Sources</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="fresh.html">Fresh</a></li>
+        </ul>
+      </nav>
+      <section class="social_media">
+        <picture>
+          <source media="(max-width: 48px)"  srcset="images/twitter_48.png">
+          <source media="(max-width: 128px)" srcset="images/twitter_128.png">
+          <a href="https://twitter.com/"><img src="images/twitter_128.png" alt="twitter icon"></a>
+        </picture>
+        <picture>
+          <source media="(max-width: 48px)"  srcset="images/instagram_48.png">
+          <source media="(max-width: 128px)" srcset="images/instagram_128.png">
+          <a href="https://www.instagram.com/"><img src="images/instagram_128.png" alt="instagram icon"></a>
+        </picture>
+        <picture>
+          <source media="(max-width: 48px)" srcset="images/gpay_48.png">
+          <source media="(max-width: 128px)" srcset="images/gpay_128.png">
+          <a href="https://pay.google.com/about/"><img src="images/gpay_128.png" alt="google pay icon"></a>
+        </picture>
+        <picture>
+          <source media="(max-width: 48px)"  srcset="images/facebook_48.png">
+          <source media="(max-width: 128px)" srcset="images/facebook_128.png">
+          <a href="https://www.facebook.com/"><img src="images/facebook_128.png" alt="facebook icon"></a>
+        </picture>
+      </section>
+    </header>
+    <main>
+    <div id="map"></div>
+    <section class="mission">
+          <h2>Our Mission</h2>
+          <p>At Bountiful Foods, we understand that food does not just fuel the body but is also a source of enjoyment and pleasure. That's why we offer many delicious and healthy options that cater to all dietary needs and preferences, including vegan, gluten-free, and paleo diets. Our menu features a variety of fresh fruits and vegetables, whole grains, lean proteins, and healthy fats to provide our customers with a balanced and nutrient-dense meal.
+            <br>
+            <br>
+            Supporting local farmers and suppliers is beneficial not only for the environment but also for the community. By sourcing our ingredients locally, we reduce our carbon footprint and support sustainable farming practices. Additionally, we strive to build long-lasting relationships with our suppliers to ensure a consistent supply of high-quality ingredients.
+            At Bountiful Foods, we are passionate about educating our customers about healthy eating habits and the benefits of organic and locally sourced foods. We offer cooking classes, workshops, and events focusing on nutrition, food preparation, and sustainability. By sharing our knowledge and expertise, we can help our customers make informed, healthy food choices supporting their overall well-being.
+            <br>
+            <br>
+            In addition to our commitment to healthy eating, we prioritize customer satisfaction and strive to create a welcoming and inclusive environment for all. Everyone deserves access to healthy and nutritious food regardless of income or background. That's why we offer affordable prices and work with local organizations to provide food assistance programs for those in need.
+            <br>
+            <br>
+            Thank you for choosing Bountiful Foods as your go-to source for healthy and delicious meals. We are committed to providing you with the best possible experience and look forward to serving you soon!</p>
+          </section>
+    <section class="story">
+          <h2>Our Story</h2>
+          <p>At Bountiful Foods, we believe that healthy eating should be accessible to everyone. We understand that in today's fast-paced world, it can be challenging to maintain a healthy diet while keeping up with the demands of work and family life. That's why we prioritize providing our customers with convenient and healthy food options that fit their busy schedules.
+            <br>
+            <br>
+            Our food trucks are equipped with state-of-the-art kitchens, allowing us to prepare and serve fresh meals on the go. Whether you're looking for a quick and nutritious lunch or a satisfying dinner option, our food trucks are the perfect solution. We also offer online ordering and delivery services, making it even easier for our customers to enjoy our meals from their homes.
+            <br>
+            <br>
+            In addition to our commitment to healthy eating, we prioritize food safety and quality. We adhere to strict food safety guidelines and protocols to ensure our customers receive safe and high-quality meals every time. Our staff is trained in proper food handling and preparation techniques, and we regularly monitor and maintain our equipment to ensure its cleanliness and functionality.
+            <br>
+            <br>
+            At Bountiful Foods, we are passionate about creating a welcoming and inclusive environment for all. We celebrate diversity and provide equal opportunities for all employees and customers. Our team comprises individuals from different backgrounds and experiences, and we value the unique perspectives and ideas they bring to the table.
+            In conclusion, at Bountiful Foods, we are committed to providing our customers with fresh, healthy, and convenient food options that support their overall well-being. We prioritize sustainability, community outreach, and customer satisfaction, and we are dedicated to positively impacting the communities we serve. Thank you for choosing Bountiful Foods, and we look forward to serving you soon!</p>
+        </section>
+        <section class="values">
+          <h2>Our Values</h2>
+          <p>At Bountiful Foods, our values set us apart from other food businesses. We are committed to promoting healthy eating habits and providing our customers with fresh, organic, and nutritious food options that support their overall well-being. Our commitment to sourcing our ingredients directly from local farmers and suppliers ensures the highest quality and promotes sustainable farming practices and the local economy.
+            <br>
+            <br>
+            In addition to our dedication to healthy eating, we prioritize convenience for our customers. We understand that life can be hectic and that finding time to prepare healthy meals can be challenging. That's why we strive to make it easy for our customers to access our food, whether through our storefront location, food trucks, or online ordering and delivery services.
+            <br>
+            <br>
+            At Bountiful Foods, we also value sustainability and minimizing our environmental impact. We use eco-friendly packaging materials and energy-efficient equipment to reduce waste and conserve energy. We are committed to positively impacting the environment and promoting sustainable practices in our business operations.
+            <br>
+            <br>
+            Inclusivity and diversity are also core values at Bountiful Foods. We believe in creating a welcoming and inclusive environment for all employees and customers, regardless of their background or experiences. We strive to celebrate diversity and provide equal opportunities for all.
+            Lastly, community outreach and giving back are integral parts of our values. We believe in building solid and meaningful relationships with our customers and the community and actively participate in local events and fundraisers. We also donate some of our profits to local charities and organizations to support those in need.
+            <br>
+            <br>
+            In summary, Bountiful Foods is committed to promoting healthy eating habits, convenience, sustainability, inclusivity and diversity, and community outreach. These core values guide our business operations and inspire us to make a positive impact in the communities we serve. We thank our customers for their support and look forward to providing fresh and nutritious food options that support their overall well-being.</p>
+      </section>
+     
+    <aside>
+        <div>
+            <h3>President of Boutiful Food</h3>
+            <h4>Jimmy Nutrition</h4>
+            <p>Jimmy Nutrition is the president of Bountiful Foods. He is a passionate advocate for healthy eating and has been a leader in the organic food industry for over 20 years. He is committed to providing his customers with fresh, organic, and nutritious food options that support their overall well-being. Jimmy Nutrition is also a strong supporter of sustainable farming practices and actively promotes local farmers and suppliers. He is a strong believer in giving back to the community and regularly participates in local events and fundraisers. Jimmy Nutrition is also a strong advocate for diversity and inclusion and strives to create a welcoming and inclusive environment for all.</p>
+        </div>
+        <div>
+            <h3>Purchasing Agent</h3>
+            <h4>Saddy Salt</h4>
+            <p>Saddy Salt is the purchasing agent at Bountiful Foods. She is responsible for sourcing and purchasing the ingredients used in our food products. She is committed to providing her customers with fresh, organic, and nutritious food options that support their overall well-being. Saddy Salt is also a strong supporter of sustainable farming practices and actively promotes local farmers and suppliers. She is a strong believer in giving back to the community and regularly participates in local events and fundraisers. Saddy Salt is also a strong advocate for diversity and inclusion and strives to create a welcoming and inclusive environment for all.</p>
+        </div>
+        <div>
+            <h3>Head Chef</h3>
+            <h4>Grace Angel</h4>
+            <p>As the head chef of Bountiful Foods, Grace Angel uses her culinary expertise to create delicious and healthy meals that showcase the flavors of locally sourced ingredients. She is passionate about using fresh, organic, and seasonal produce to create unique and flavorful dishes that nourish the body and soul.</p>
+        </div>
+        <div>
+            <h3>Delivery Driver</h3>
+            <h4>John Doe</h4>
+            <p>John Doe is a delivery driver at Bountiful Foods. He is responsible for delivering our food products to our customers. He is committed to providing his customers with fresh, organic, and nutritious food options that support their overall well-being. John Doe is also a strong supporter of sustainable farming practices and actively promotes local farmers and suppliers. He is a strong believer in giving back to the community and regularly participates in local events and fundraisers. John Doe is also a strong advocate for diversity and inclusion and strives to create a welcoming and inclusive environment for all.</p>
+        </div>
+        <div>
+            <h3>Social Media Coordinator</h3>
+            <h4>Rachel Good</h4>
+            <p>As the Social Media Coordinator at Bountiful Foods, Rachel Good is responsible for managing the company's social media accounts and creating engaging content that promotes the brand's values and products. She is skilled at using various social media platforms to connect with customers and build a strong online presence for the business.</p>
+        </div>
+        <h3>Contact Any Of Our Team Leaders</h3>
+        <p>Just include the intend person's name in the email subject </p>
+        <a href="mailto:Bountiful.Food@gmail.com"> Bountiful.Food@gmail.com</a>
+    </aside>
+</main>
+   <!-- footer -->
+<footer>
+  <div class="logo"> 
+    <!-- footer image -->
+    <img src="images/3558096_bar_fruit_juice_smoothie_truck_icon.png" alt="Bountiful Foods Green Truck">
+  
+    <!-- footer left side -->
+    <section class="footer_left">
+      <h2>Bountiful Foods</h2><br>
+    </div>
+      <p>Store Location</p>
+      <address>19770 Beach Blvd<br>Huntington Beach, CA 92648 </address>
+    </section>
+ 
+ 
+
+  <!-- Right side -->
+  <div class="footer_right">
+    <section class="contactInfo">
+      <h3>Contact Info</h3>
+      <a href="mailto:Bountiful.Food@gmail.com"> Bountiful.Food@gmail.com</a><br><br>
+      <a href="tel:7149636667">(714) 963-6667</a><br><br>
+
+      <!-- map -->
+      <map name="map">
+        <a href="https://www.google.com/maps">Track Our Truck<br><br>Click Here</a>
+      </map>
+    </section><br>
+  </div>
+
+  <!-- designer info Must Contain Site name, my name, "WDD230 Project, and last modification date"-->
+  <div class="creatorInfo">
+    *~|~* &copy;
+    <span id="currentdate"></span>
+    *~|~* Johnathan Trok *~|~* California *~|~* WDD230 Project *~|~* Last Modified:
+    <span id="modified"></span>
+  </div>
+</footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/lastmodified.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/map.js"></script>
+</body>
+</html>

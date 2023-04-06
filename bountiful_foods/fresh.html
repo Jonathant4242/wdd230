@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- title & discription-->
-    <!-- compelet!!! -->
-    <title></title>
-    <meta name="description" content="">
+    <title>Bountiful Foods</title>
+    <meta name="description" content="Bountiful Foods is a local grocery store that is active in our community.">
     
     <!-- meta -->
     <meta name="keywords" content="bountiful foods, boutiful food, fresh fruit shake, juice, strawberries, mangos, healthy drinks, smoothie recipes, blended beverages, tropical fruits, vitamin C, antioxidants, plant-based, natural sweeteners, refreshing beverages, summer drinks, energy boost, hydration, immune system support, weight loss, dairy-free, healthy, health, gut health">
@@ -20,15 +19,166 @@
     
     <!-- css -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/bass.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     
     <!-- favicon -->
-    <link rel="icon" href="images/favicon.ico"type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
+
+<body>
+    <header>
+      <div class="logo">
+      <img src="images/3558096_bar_fruit_juice_smoothie_truck_icon.png" alt="Bountiful Foods Green Truck">
+      <h1>Bountiful Foods</h1>
+      </div>
+      <p>Locally Grown Ingredients Picked By You</p>
+      <div class="date"></div>
+      <div id="content"></div>
+      <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="mainNav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="sources.html">Sources</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="fresh.html">Fresh</a></li>
+        </ul>
+      </nav>
+      <section class="social_media">
+        <picture>
+          <source media="(max-width: 48px)"  srcset="images/twitter_48.png">
+          <source media="(max-width: 128px)" srcset="images/twitter_128.png">
+          <a href="https://twitter.com/"><img src="images/twitter_128.png" alt="twitter icon"></a>
+        </picture>
+        <picture>
+          <source media="(max-width: 48px)"  srcset="images/instagram_48.png">
+          <source media="(max-width: 128px)" srcset="images/instagram_128.png">
+          <a href="https://www.instagram.com/"><img src="images/instagram_128.png" alt="instagram icon"></a>
+        </picture>
+        <picture>
+          <source media="(max-width: 48px)" srcset="images/gpay_48.png">
+          <source media="(max-width: 128px)" srcset="images/gpay_128.png">
+          <a href="https://pay.google.com/about/"><img src="images/gpay_128.png" alt="google pay icon"></a>
+        </picture>
+        <picture>
+          <source media="(max-width: 48px)"  srcset="images/facebook_48.png">
+          <source media="(max-width: 128px)" srcset="images/facebook_128.png">
+          <a href="https://www.facebook.com/"><img src="images/facebook_128.png" alt="facebook icon"></a>
+        </picture>
+      </section>
+    </header>
+    
+    <main>
+
+        <ul id="fruit-table"></ul>
+
+<form id="fruit-order-from" action="" method="get">
+    <input type="hidden" name="timestamp" value="">
+    <!-- personal info -->
+    <fieldset>
+        <legend>Personal information<br>Required*</legend>
+        <label>First Name*
+            <input type="text" id="first_name" name="first_name" required>
+        </label>
+        <label>Last Name
+            <input type="text" name="last_name">
+        </label>
+        <label>Email*
+            <input type="email" id="email" name="email" required>
+        </label>
+        <label>Phone Number
+            <input type="tel" id="phone_number" name="phone_number" required>
+        </label>
+    </fieldset>
+    <!-- order -->
+    <fieldset>
+        <legend>Select Three Fruits:</legend>
+        <div id="fruit-list"></div>
+        <div id="cart">
+            <legend>Cart:</legend>
+            <div id="cart-items"></div>
+            <button id="populate-cart" type="button">Populate Cart</button>
+        </div>
+    </fieldset>
+
+    <!-- order info -->
+    <fieldset>
+        <legend>Order Information</legend>
+        <label>Order Type
+            <select name="order_type">
+                <option value="in_store_pickup">In Store</option>
+                <option value="food_truck_pickup">Food Truck</option>
+            </select>
+        </label>
+        <label>Order Date
+            <input type="date" name="order_date">
+        </label>
+        <label>Order Time
+            <input type="time" name="order_time">
+        </label>
+        <label>Order Location
+            <input type="text" name="order_location">
+        </label>
+        <label>Order Notes
+            <textarea name="order_notes" id="special-instructions" rows="5" cols="30"></textarea>
+        </label>
+    </fieldset>
+    <div id="fruit-list"></div>
+    <!-- submit -->
+    <div>
+        <input class="submitBtn" type="submit" value="submit">
+    </div>
+       
+</form>
+
+    </main>
+   <!-- footer -->
+<footer>
+  <div class="logo"> 
+    <!-- footer image -->
+    <img src="images/3558096_bar_fruit_juice_smoothie_truck_icon.png" alt="Bountiful Foods Green Truck">
+  
+    <!-- footer left side -->
+    <section class="footer_left">
+      <h2>Bountiful Foods</h2><br>
+    </div>
+      <p>Store Location</p>
+      <address>19770 Beach Blvd<br>Huntington Beach, CA 92648 </address>
+    </section>
+ 
+ 
+
+  <!-- Right side -->
+  <div class="footer_right">
+    <section class="contactInfo">
+      <h3>Contact Info</h3>
+      <a href="mailto:Bountiful.Food@gmail.com"> Bountiful.Food@gmail.com</a><br><br>
+      <a href="tel:7149636667">(714) 963-6667</a><br><br>
+
+      <!-- map -->
+      <map name="map">
+        <a href="https://www.google.com/maps">Track Our Truck<br><br>Click Here</a>
+      </map>
+    </section><br>
+  </div>
+
+  <!-- designer info Must Contain Site name, my name, "WDD230 Project, and last modification date"-->
+  <div class="creatorInfo">
+    *~|~* &copy;
+    <span id="currentdate"></span>
+    *~|~* Johnathan Trok *~|~* California *~|~* WDD230 Project *~|~* Last Modified:
+    <span id="modified"></span>
+  </div>
+</footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/fruits.js"></script>
+</body>
+</html>

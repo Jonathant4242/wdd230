@@ -6,8 +6,10 @@
 :root{
 --primary-color: rgb(122, 168, 116);
 --secondary-color: rgb(247, 219, 106);
+--secondary-color-light: rgb(247, 219, 106, .5);
 --accent-second-color: rgb(235, 176, 45);
 --pop-color:rgb(216, 100, 169);
+--pop-color-light:rgb(216, 100, 169, .5);
 --background: rgb(250, 241, 230);
 --lighter-background: rgb(253, 250, 246);
 --white: rgb(255, 255, 255);
@@ -22,7 +24,11 @@
 --bold-font-weight: 700;
 }
 
-
+body{
+  font-family: var(--font-family);
+  font-size: var(--reg-font-size);
+  font-weight: var(--reg-font-weight);
+}
 
 /* Header */
 header {
@@ -122,7 +128,7 @@ nav button {
   /* Nav Hover/ active click */
   nav ul li a:hover,
   nav ul li a:active {
-    background-color: rgb(216, 100, 169, .5);
+    background-color:var(--pop-color-light);
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: x-large;
@@ -168,11 +174,43 @@ nav button {
     background-color: var(--background);
   }
   section.social_media :hover{
-    background-color: rgb(216, 100, 169 .1);
+    background-color: var(--pop-color-light);
     width: 50px;
   }
 
-
+/* main */
+main {
+    background-color: var(--lighter-background);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+    font-weight: var(--bold-font-weight);
+    font-size: 1rem;
+    color: var(--primary-color);
+  }
+  main h2, main h3{
+    margin: 0;
+    padding: 0;
+    color: var(--pop-color);
+    background-color: var(--background);
+  }
+  main h4{
+    background-color: var(--secondary-color-light);
+  }
+  main p, main address {
+    margin: .5rem;
+    padding: .5rem;
+    background-color: var(--lighter-background);
+  }
+  section:nth-child(1) p {
+    color: black;
+  }
+  section:nth-child(1) h2{
+    color: var(--primary-color)
+  }
 
 
 
@@ -226,21 +264,26 @@ nav button {
     text-decoration: none;
   }
 
-  footer section a:hover {
+  .footer_right a:hover, main section:nth-child(2) a:hover {
     background-color: var(--pop-color);
+    font-size: larger;
   }
 
-  footer p a:active {
+  footer p a:active, main section:nth-child(2) a:active {
     color: var(--accent-second-color);
   }
 
-  footer section a:visited {
+  footer section a:visited, main section:nth-child(2) a:visited {
     color: var(--white);
   }
 
 
   
-  footer section a:link {
+  footer section a:link, main section:nth-child(2) a:link {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     text-decoration: underline dotted;
     color: var(--white);
     background-color: var(--accent-second-color);
