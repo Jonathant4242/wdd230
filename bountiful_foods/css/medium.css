@@ -90,5 +90,9 @@
         height: 100%;
         background-color: var(--lighter-background);
       }
-    
+      footer {
+
+        font-size: 1rem;
+     
+      }
 }
